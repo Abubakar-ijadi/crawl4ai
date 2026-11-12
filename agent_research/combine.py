@@ -35,6 +35,8 @@ for r in tx.itertuples(index=False):
 
 # ---------- Florida ----------
 fl = pd.read_csv(flgz, dtype=str, keep_default_na=False)
+for c in fl.columns:   # FL wraps some values as Excel formulas, e.g. ="537097"
+    fl[c] = fl[c].str.replace(r'^="(.*)"$', r"\1", regex=True).str.strip()
 fl["d"] = pd.to_datetime(fl["License Issue Date"], errors="coerce")
 fl["email"] = fl["Email Address"].str.strip().str.lower()
 fl["phone"] = fl["Business Phone"].map(digits)
