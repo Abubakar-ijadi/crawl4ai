@@ -4,6 +4,7 @@ import csv, gzip, io, json, re, sys, unicodedata
 import pandas as pd, requests
 
 links_file, xlsx, out_path = sys.argv[1:4]
+import os; os.makedirs(os.path.dirname(out_path) or ".", exist_ok=True)
 links = [l for l in json.load(open(links_file)) if "AllValidLicensesIndividual" in l]
 assert links, "no individual license files found"
 

@@ -14,6 +14,8 @@ def with_requests():
     h = requests.get(URL, timeout=60, headers={"User-Agent": "Mozilla/5.0"}).text
     return sorted(set(re.findall(r'https://www\.myfloridacfo\.com/downloads/[^"\']+?\.csv', h)))
 
+import os
+os.makedirs(os.path.dirname(sys.argv[1]) or ".", exist_ok=True)
 links = []
 try:
     links = asyncio.run(with_crawl4ai()); print("crawl4ai found", len(links), "csv links")
