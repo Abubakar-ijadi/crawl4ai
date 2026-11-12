@@ -5,7 +5,7 @@ from openpyxl.utils import get_column_letter
 src, pkl, out = sys.argv[1:4]
 res = pd.read_pickle(pkl)
 wb = load_workbook(src)
-ws = wb['10K Sample']
+ws = wb.worksheets[0]
 hdr = [c.value for c in ws[1]]
 assert hdr[:4] == ['Name','Phone','Email','State'], hdr
 # sanity: row order unchanged

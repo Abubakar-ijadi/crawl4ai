@@ -2,17 +2,22 @@ name: Agent experience research
 
 on:
   workflow_dispatch:
-  push:
-    branches: [claude/modest-davinci-8k57js]
-    paths: ["agent_research/*.py", "agent_research/run.txt", ".github/workflows/agent-research.yml"]
+    inputs:
+      sheet:
+        description: "Path of the contact sheet in the repo (columns: Name, Phone, Email, State)"
+        required: true
+        default: "sheets/File 1.xlsx"
 
 permissions:
   contents: write
 
 jobs:
-  florida:
+  research:
     runs-on: ubuntu-latest
-    timeout-minutes: 60
+    timeout-minutes: 120
+    env:
+      SHEET: ${{ inputs.sheet }}
+      WORK: /tmp/work
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -22,15 +27,25 @@ jobs:
         run: |
           pip install -q -e . pandas openpyxl requests
           python -m playwright install --with-deps chromium || true
+          mkdir -p "$WORK"
       - name: Discover Florida bulk files (crawl4ai)
-        run: python agent_research/discover_links.py agent_research/out/fl_links.json
+        run: python agent_research/discover_links.py "$WORK/fl_links.json"
+      - name: Download Texas licensee data
+        run: python agent_research/tx_download.py "$WORK/tx_people.csv"
       - name: Download and filter Florida licenses
-        run: python agent_research/fl_extract.py agent_research/out/fl_links.json "Insurance_Agents_10K_Random_Sample (1).xlsx" agent_research/out/fl_matches.csv.gz
-      - name: Commit results
+        run: python agent_research/fl_extract.py "$WORK/fl_links.json" "$SHEET" "$WORK/fl_matches.csv.gz"
+      - name: Classify agents and build workbooks
+        run: |
+          base=$(basename "$SHEET"); base="${base%.*}"
+          mkdir -p sheets/results
+          python -W ignore agent_research/combine.py "$SHEET" "$WORK/tx_people.csv" "$WORK/fl_matches.csv.gz" "$WORK/combined.pkl"
+          python -W ignore agent_research/write_xlsx.py "$SHEET" "$WORK/combined.pkl" "sheets/results/${base} - with Experience.xlsx"
+          python -W ignore agent_research/filter_1plus.py "sheets/results/${base} - with Experience.xlsx" "sheets/results/${base} - 1plus Years.xlsx"
+      - name: Commit results (workbooks only, no raw license data)
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add -f agent_research/out
-          git commit -m "Florida license extract for agent research" || echo "nothing to commit"
+          git add sheets/results
+          git commit -m "Experience results for ${SHEET} [skip ci]" || echo "nothing to commit"
           git pull --rebase origin ${GITHUB_REF_NAME}
           git push origin HEAD:${GITHUB_REF_NAME}
