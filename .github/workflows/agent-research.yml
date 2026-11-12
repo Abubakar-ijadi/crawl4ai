@@ -1,0 +1,36 @@
+name: Agent experience research
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [claude/modest-davinci-8k57js]
+    paths: ["agent_research/*.py", "agent_research/run.txt", ".github/workflows/agent-research.yml"]
+
+permissions:
+  contents: write
+
+jobs:
+  florida:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install crawl4ai from this repo
+        run: |
+          pip install -q -e . pandas openpyxl requests
+          python -m playwright install --with-deps chromium || true
+      - name: Discover Florida bulk files (crawl4ai)
+        run: python agent_research/discover_links.py agent_research/out/fl_links.json
+      - name: Download and filter Florida licenses
+        run: python agent_research/fl_extract.py agent_research/out/fl_links.json "Insurance_Agents_10K_Random_Sample (1).xlsx" agent_research/out/fl_matches.csv.gz
+      - name: Commit results
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add agent_research/out
+          git commit -m "Florida license extract for agent research" || echo "nothing to commit"
+          git pull --rebase origin ${GITHUB_REF_NAME}
+          git push origin HEAD:${GITHUB_REF_NAME}
