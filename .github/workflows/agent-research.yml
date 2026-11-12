@@ -7,12 +7,17 @@ on:
         description: "Path of the contact sheet in the repo (columns: Name, Phone, Email, State)"
         required: true
         default: "sheets/File 1.xlsx"
+      mode:
+        description: "research = classify the sheet; export_fl = export full Florida license data as downloads"
+        required: false
+        default: "research"
 
 permissions:
   contents: write
 
 jobs:
   research:
+    if: ${{ inputs.mode != 'export_fl' }}
     runs-on: ubuntu-latest
     timeout-minutes: 120
     env:
@@ -49,3 +54,33 @@ jobs:
           git commit -m "Experience results for ${SHEET} [skip ci]" || echo "nothing to commit"
           git pull --rebase origin ${GITHUB_REF_NAME}
           git push origin HEAD:${GITHUB_REF_NAME}
+
+  export_fl:
+    if: ${{ inputs.mode == 'export_fl' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install crawl4ai from this repo
+        run: |
+          pip install -q -e . openpyxl requests
+          python -m playwright install --with-deps chromium || true
+      - name: Discover Florida bulk files (crawl4ai)
+        run: python agent_research/discover_links.py /tmp/fl_links.json
+      - name: Download and convert Florida files
+        run: python agent_research/export_fl.py /tmp/fl_links.json /tmp/fl_export
+      - name: Upload Excel files
+        uses: actions/upload-artifact@v4
+        with:
+          name: Florida-Licenses-Excel
+          path: /tmp/fl_export/*.xlsx
+          retention-days: 90
+      - name: Upload CSV files
+        uses: actions/upload-artifact@v4
+        with:
+          name: Florida-Licenses-CSV
+          path: /tmp/fl_export/*.csv.zip
+          retention-days: 90
