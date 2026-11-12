@@ -8,7 +8,7 @@ on:
         required: true
         default: "sheets/File 1.xlsx"
       mode:
-        description: "research = classify the sheet; export_fl = export full Florida license data as downloads"
+        description: "research = classify the sheet; export_fl = full Florida data downloads; contacts = FL+TX 1+ year contact lists (zip)"
         required: false
         default: "research"
 
@@ -17,7 +17,7 @@ permissions:
 
 jobs:
   research:
-    if: ${{ inputs.mode != 'export_fl' }}
+    if: ${{ inputs.mode == 'research' || inputs.mode == '' }}
     runs-on: ubuntu-latest
     timeout-minutes: 120
     env:
@@ -83,4 +83,28 @@ jobs:
         with:
           name: Florida-Licenses-CSV
           path: /tmp/fl_export/*.csv.zip
+          retention-days: 90
+
+  contacts:
+    if: ${{ inputs.mode == 'contacts' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install crawl4ai from this repo
+        run: |
+          pip install -q -e . pandas openpyxl requests
+          python -m playwright install --with-deps chromium || true
+      - name: Discover Florida bulk files (crawl4ai)
+        run: python agent_research/discover_links.py /tmp/fl_links.json
+      - name: Build FL + TX 1+ year contact lists
+        run: python -W ignore agent_research/export_contacts.py /tmp/fl_links.json /tmp/contacts
+      - name: Upload zip
+        uses: actions/upload-artifact@v4
+        with:
+          name: FL_TX_Licensees_1plus_Years
+          path: /tmp/contacts/FL_TX_Licensees_1plus_Years.zip
           retention-days: 90
