@@ -51,11 +51,11 @@ agg["Business Phone"] = agg["Business Phone"].map(lambda p: f"({p[:3]}) {p[3:6]}
 agg["Email"] = agg["Email"].str.strip().str.lower()
 print("FL unique people", len(agg), flush=True)
 fl_contact = agg.set_index("NPN")[["Email", "Business Phone"]]
-fl1 = agg[(agg["Years of Experience"] >= 1) & ((agg.Email != "") | (agg["Business Phone"] != ""))].copy()
+fl1 = agg[(agg["Years of Experience"] >= 1) & (agg["Business Phone"] != "")].copy()
 fl1["Earliest License Issue Date"] = fl1["Earliest License Issue Date"].dt.date
 fl1 = fl1.sort_values(["Years of Experience", "Last Name"], ascending=[False, True])
 stats = {"fl_license_rows": len(fl), "fl_people": len(agg),
-         "fl_1plus": int((agg["Years of Experience"] >= 1).sum()), "fl_1plus_with_contact": len(fl1)}
+         "fl_1plus": int((agg["Years of Experience"] >= 1).sum()), "fl_1plus_with_phone": len(fl1)}
 del fl
 
 # ---------------- Texas ----------------
@@ -112,27 +112,31 @@ t1.loc[need, "Contact Source"] = t1.loc[need, "NPN"].map(lambda n: f"Your list: 
 cols = ["NPN", "Name", "Email", "Phone", "City", "State", "Zip", "License Types", "Qualifications",
         "Earliest License Issue Date", "Years of Experience", "Contact Source", "Note"]
 t1 = t1[cols].sort_values("Name")
-tc = t1[t1.Email.ne("") | t1.Phone.ne("")]
-stats.update({"tx_1plus_with_contact": len(tc), "tx_contact_from_fl": int((tc["Contact Source"] == "FL DFS record (same NPN)").sum())})
+need2 = t1.Phone.eq("") & t1.NPN.isin(own)   # fill missing phone from your lists
+t1.loc[need2, "Phone"] = t1.loc[need2, "NPN"].map(lambda n: own[n][1])
+t1.loc[need2 & t1["Contact Source"].eq(""), "Contact Source"] = t1.loc[need2 & t1["Contact Source"].eq(""), "NPN"].map(lambda n: f"Your list: {own[n][2]}")
+tc = t1[t1.Phone.fillna("").str.strip().ne("")]
+stats.update({"tx_1plus_with_phone": len(tc), "tx_phone_from_fl": int((tc["Contact Source"] == "FL DFS record (same NPN)").sum())})
 
 # ---------------- write ----------------
-files = {
-    "Florida_1plus_Years_With_Contacts.csv": fl1,
-    "Texas_1plus_Years_With_Contacts.csv": tc,
-    "Texas_1plus_Years_All_Licensees_NoPhoneEmail_in_TDI.csv": t1,
-}
-readme = ["Insurance licensees with MORE THAN 1 YEAR of experience - free official public data",
-          f"Built {TODAY.date()}. Years = time since the earliest license issue date on record.", "",
-          "Florida: Florida Dept. of Financial Services bulk files 'All Valid Licenses - Individual' (A-K, L-Z).",
-          "  One row per person (NPN). Contact details (email, business phone, addresses) come from FL DFS.",
-          "  Included only if they have at least an email or a phone.", "",
-          "Texas: Texas Dept. of Insurance open data (data.texas.gov kxv3-diwf). TDI publishes NO email/phone,",
-          "  only city/state/ZIP. Texas_1plus_Years_With_Contacts adds email/phone from FL DFS (same NPN) or",
-          "  from your own uploaded lists (High-confidence matches). The '_All_Licensees' file lists every TX",
-          "  licensee with 1+ years, with or without contact details.", "", "Counts:"] + [f"  {k}: {v:,}" for k, v in stats.items()]
-zpath = os.path.join(outdir, "FL_TX_Licensees_1plus_Years.zip")
-with zipfile.ZipFile(zpath, "w", zipfile.ZIP_DEFLATED, compresslevel=9) as z:
-    z.writestr("README.txt", "\n".join(readme))
-    for name, df in files.items():
-        z.writestr(name, df.to_csv(index=False))
-print("\n".join(readme)); print("zip MB", os.path.getsize(zpath) // 1_000_000)
+readme = ["Insurance licensees with MORE THAN 1 YEAR of experience AND a phone number - free official public data",
+          f"Built {TODAY.date()}. Years = time since the earliest license issue date on record.",
+          "Records without a phone number are skipped.", "",
+          "Florida: Florida Dept. of Financial Services bulk files 'All Valid Licenses - Individual'.",
+          "  One row per person (NPN). Email, business phone and addresses come from FL DFS.",
+          "  Split into parts (sorted by years of experience, highest first).", "",
+          "Texas: Texas Dept. of Insurance open data (data.texas.gov kxv3-diwf). TDI publishes NO phone/email,",
+          "  so phone/email come from FL DFS (same NPN) or from your own uploaded lists (High-confidence matches).",
+          "", "Counts:"] + [f"  {k}: {v:,}" for k, v in stats.items()]
+FL_PARTS = 4
+size = -(-len(fl1) // FL_PARTS)
+for i in range(FL_PARTS):
+    d = os.path.join(outdir, f"FL_part{i+1}"); os.makedirs(d, exist_ok=True)
+    fl1.iloc[i*size:(i+1)*size].to_csv(os.path.join(d, f"Florida_1plus_Years_With_Phone_part{i+1}_of_{FL_PARTS}.csv"), index=False)
+    open(os.path.join(d, "README.txt"), "w").write("\n".join(readme))
+d = os.path.join(outdir, "TX"); os.makedirs(d, exist_ok=True)
+tc.to_csv(os.path.join(d, "Texas_1plus_Years_With_Phone.csv"), index=False)
+open(os.path.join(d, "README.txt"), "w").write("\n".join(readme))
+print("\n".join(readme))
+for root, _, fs in os.walk(outdir):
+    for f in fs: print(os.path.join(root, f), os.path.getsize(os.path.join(root, f)) // 1_000_000, "MB")

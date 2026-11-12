@@ -102,9 +102,33 @@ jobs:
         run: python agent_research/discover_links.py /tmp/fl_links.json
       - name: Build FL + TX 1+ year contact lists
         run: python -W ignore agent_research/export_contacts.py /tmp/fl_links.json /tmp/contacts
-      - name: Upload zip
+      - name: Upload Florida part 1
         uses: actions/upload-artifact@v4
         with:
-          name: FL_TX_Licensees_1plus_Years
-          path: /tmp/contacts/FL_TX_Licensees_1plus_Years.zip
+          name: Florida_1plus_Years_With_Phone_part1
+          path: /tmp/contacts/FL_part1/
+          retention-days: 90
+      - name: Upload Florida part 2
+        uses: actions/upload-artifact@v4
+        with:
+          name: Florida_1plus_Years_With_Phone_part2
+          path: /tmp/contacts/FL_part2/
+          retention-days: 90
+      - name: Upload Florida part 3
+        uses: actions/upload-artifact@v4
+        with:
+          name: Florida_1plus_Years_With_Phone_part3
+          path: /tmp/contacts/FL_part3/
+          retention-days: 90
+      - name: Upload Florida part 4
+        uses: actions/upload-artifact@v4
+        with:
+          name: Florida_1plus_Years_With_Phone_part4
+          path: /tmp/contacts/FL_part4/
+          retention-days: 90
+      - name: Upload Texas
+        uses: actions/upload-artifact@v4
+        with:
+          name: Texas_1plus_Years_With_Phone
+          path: /tmp/contacts/TX/
           retention-days: 90
