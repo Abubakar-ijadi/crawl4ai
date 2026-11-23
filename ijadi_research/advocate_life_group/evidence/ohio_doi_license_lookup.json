@@ -1,0 +1,13 @@
+{"tool": "Firecrawl agent (firecrawl_agent job 01a2097f-b38b-70f4-95e0-361e63fb08ef), browsing Ohio DOI public agent locator", "checked_utc": "2026-11-23T17:47Z",
+ "source_url": "https://gateway.insurance.ohio.gov/UI/ODI.Agent.Public.UI/AgentLocator.mvc/DisplayIndividualDetail/iL!2b3zGy0sI2mXMVjX1jAtA!3d!3d",
+ "search": "last name 'Poullas' -> 1 record",
+ "individual": {"name": "ATHANASIOS G POULLAS", "npn": "18341865", "resident_state": "Virginia", "address_of_record": "Mechanicsville, VA (street omitted here)", "phone_of_record": "(617) 650-1578",
+   "licenses": [
+     {"no": "1157986", "type": "Non-Resident Major Lines", "status": "Cancelled (Residency Change)", "issued": "2017-08-14", "lines": ["Life", "Accident & Health"]},
+     {"no": "1482684", "type": "Resident Major Lines", "status": "Surrendered (Voluntary)", "issued": "2017-08-14", "lines": ["Life", "Accident & Health"]},
+     {"no": "1600980", "type": "Non-Resident Major Lines", "status": "Cancelled (Residency Change)", "issued": "2024-08-14", "lines": ["Life", "Accident & Health"]},
+     {"no": "1660132", "type": "Resident Major Lines", "status": "Surrendered (Clearance Request), effective 2026-07-30", "issued": "2024-08-14", "lines": ["Life", "Accident & Health"]},
+     {"no": "1763458", "type": "Non-Resident Major Lines", "status": "ACTIVE (Initial Approval)", "issued": "2026-08-10", "expires": "2029-01-31", "lines": ["Life", "Accident & Health"]}]},
+ "agency_entity": "Not found in ODI locator for 'Advocate Life Group' (locator requires NPN/city/ZIP for business search)",
+ "ohio_sos": "Not retrieved: businesssearch.ohiosos.gov returned a security-check page to the agent",
+ "finra_brokercheck": "No record for 'Athan Poullas' (Alexandria finra-org brokercheck_search returned only non-matching names); no firm 'Advocate Life Group'"}

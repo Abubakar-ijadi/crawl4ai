@@ -1,0 +1,805 @@
+[
+ {
+  "label": "comp_ladder_national",
+  "source": "firecrawl rawHtml -> crawl4ai raw: (comp_ladder_national.html)",
+  "crawl4ai_success": true,
+  "html_bytes": 184176,
+  "inline_style_bytes": 102,
+  "script_tags": 18,
+  "title": "Ladder Life | Flexible life insurance in minutes.",
+  "title_len": 49,
+  "meta_description": "Affordable, 100% digital term life insurance from $100k to $3 million with the ability to adjust your coverage as life changes. Issued by carriers with excellent ratings.",
+  "meta_robots": null,
+  "canonical": "https://www.ladderlife.com/",
+  "viewport": true,
+  "h1": [],
+  "h1_count": 0,
+  "h2_sample": [
+   "You're in control of your coverage",
+   "Smart questions you may be asking",
+   "Stability and resilience for your family"
+  ],
+  "h2_count": 3,
+  "word_count_markdown": 1132,
+  "word_count_visible_text": 1149,
+  "internal_links": 27,
+  "external_links": 0,
+  "external_link_domains": [],
+  "jsonld_types": [],
+  "microdata_types": [],
+  "images": 15,
+  "images_missing_alt": 14,
+  "forms": [],
+  "phones": [],
+  "oh_street_address_found": [],
+  "tel_links": [],
+  "has_faq_heading": true,
+  "question_headings": [],
+  "mentions_license_number": false,
+  "mentions_npn": false,
+  "chat_widget": [
+   "zendesk"
+  ],
+  "booking_widget": [],
+  "analytics": [
+   "googletagmanager",
+   "google-analytics"
+  ],
+  "lorem_ipsum": 0,
+  "placeholder_text": [],
+  "recaptcha": false,
+  "generator": null,
+  "keyword_hits": {
+   "life insurance": 26,
+   "term life": 8,
+   "whole life": 2,
+   "final expense": 0,
+   "mortgage protection": 0,
+   "annuit": 0,
+   "medicare": 0,
+   "retirement": 0,
+   "long-term care": 0,
+   "ohio": 0,
+   "columbus": 0,
+   "mount vernon": 0,
+   "knox county": 0,
+   "licensed": 0,
+   "veteran": 0,
+   "federal": 0,
+   "IUL|indexed universal": 0
+  }
+ },
+ {
+  "label": "comp_western_southern_mtv",
+  "source": "firecrawl rawHtml -> crawl4ai raw: (comp_western_southern_mtv.html)",
+  "crawl4ai_success": true,
+  "html_bytes": 258900,
+  "inline_style_bytes": 65635,
+  "script_tags": 27,
+  "title": "Life Insurance Company in MOUNT VERNON, OH | Western & Southern Life",
+  "title_len": 68,
+  "meta_description": "Protect your family and secure your future with life insurance, retirement, and investment help from Western & Southern Life in MOUNT VERNON, OH. Call today!",
+  "meta_robots": null,
+  "canonical": "https://www.westernsouthern.com/wslife/financial-representatives/offices/mount-vernon-oh-063-4",
+  "viewport": true,
+  "h1": [
+   "Western & Southern Life: Insurance Office                            MOUNT VERNON, OH."
+  ],
+  "h1_count": 1,
+  "h2_sample": [
+   "Life Insurance & Annuities",
+   "Investments",
+   "Life Insurance & Annuities",
+   "Investments",
+   "Financial Representatives",
+   "Financial Solutions",
+   "Find an Office or Financial Representative",
+   "Ready to Continue?"
+  ],
+  "h2_count": 8,
+  "word_count_markdown": 185757,
+  "word_count_visible_text": 1907,
+  "internal_links": 107,
+  "external_links": 8,
+  "external_link_domains": [
+   "tel:4196326100",
+   "tel:4196326108",
+   "tel:7402633323",
+   "tel:7402633329",
+   "tel:7402633337",
+   "tel:7403929851",
+   "tel:8004654468",
+   "tel:8668327719"
+  ],
+  "jsonld_types": [
+   "BreadcrumbList",
+   "GeoCoordinates",
+   "InsuranceAgency",
+   "ListItem",
+   "PostalAddress"
+  ],
+  "microdata_types": [],
+  "images": 36,
+  "images_missing_alt": 14,
+  "forms": [
+   {
+    "action": "https://www.westernsouthern.com/wslife/search",
+    "fields": [
+     "q"
+    ]
+   },
+   {
+    "action": "https://www.westernsouthern.com/wslife/financial-representatives/offices",
+    "fields": [
+     "value"
+    ]
+   },
+   {
+    "action": "https://www.westernsouthern.com/wslife/financial-representatives/offices",
+    "fields": []
+   }
+  ],
+  "phones": [
+   "419-632-6100",
+   "419-632-6108",
+   "740-263-3323",
+   "740-263-3329",
+   "740-263-3337",
+   "740-392-9851",
+   "740-393-1851",
+   "800-465-4468",
+   "866-832-7719",
+   "877-367-9734"
+  ],
+  "oh_street_address_found": [
+   "1650 COSHOCTON AVE STE A MOUNT VERNON, OH 43050",
+   "400 Broadway Cincinnati, OH 45202"
+  ],
+  "tel_links": [
+   "tel:4196326100",
+   "tel:4196326108",
+   "tel:7402633323",
+   "tel:7402633329",
+   "tel:7402633337"
+  ],
+  "has_faq_heading": false,
+  "question_headings": [
+   "Ready to Continue?"
+  ],
+  "mentions_license_number": false,
+  "mentions_npn": false,
+  "chat_widget": [],
+  "booking_widget": [
+   "calendly"
+  ],
+  "analytics": [
+   "googletagmanager",
+   "hotjar"
+  ],
+  "lorem_ipsum": 0,
+  "placeholder_text": [],
+  "recaptcha": false,
+  "generator": null,
+  "keyword_hits": {
+   "life insurance": 16,
+   "term life": 1,
+   "whole life": 1,
+   "final expense": 0,
+   "mortgage protection": 0,
+   "annuit": 14,
+   "medicare": 2,
+   "retirement": 9,
+   "long-term care": 2,
+   "ohio": 3,
+   "columbus": 0,
+   "mount vernon": 4,
+   "knox county": 0,
+   "licensed": 2,
+   "veteran": 0,
+   "federal": 0,
+   "IUL|indexed universal": 0
+  }
+ },
+ {
+  "label": "comp_depolo_allstate_life",
+  "source": "firecrawl rawHtml -> crawl4ai raw: (comp_depolo_allstate_life.html)",
+  "crawl4ai_success": true,
+  "html_bytes": 77650,
+  "inline_style_bytes": 595,
+  "script_tags": 25,
+  "title": "Life & Retirement Insurance in Mount Vernon, OH | DePolo & Associates",
+  "title_len": 69,
+  "meta_description": "Term, whole, and universal life insurance plus long-term care and retirement planning. DePolo & Associates helps Knox County families plan for what's ahead.",
+  "meta_robots": null,
+  "canonical": "https://www.depoloinsurance.com/insurance/life",
+  "viewport": true,
+  "h1": [
+   "Life and retirement protection for the people you love"
+  ],
+  "h1_count": 1,
+  "h2_sample": [
+   "Life insurance is for the family you leave behind",
+   "Frequently Asked Questions",
+   "Get a Free Life & Retirement Quote"
+  ],
+  "h2_count": 3,
+  "word_count_markdown": 657,
+  "word_count_visible_text": 620,
+  "internal_links": 16,
+  "external_links": 3,
+  "external_link_domains": [
+   "mailto:jaydepolo@allstate.com",
+   "tel:7403927106",
+   "tel:7404802899"
+  ],
+  "jsonld_types": [
+   "Answer",
+   "Audience",
+   "BreadcrumbList",
+   "FAQPage",
+   "ListItem",
+   "Organization",
+   "Place",
+   "PostalAddress",
+   "Question",
+   "Service",
+   "SpeakableSpecification",
+   "WebSite"
+  ],
+  "microdata_types": [],
+  "images": 5,
+  "images_missing_alt": 1,
+  "forms": [
+   {
+    "action": null,
+    "fields": [
+     "website",
+     "product",
+     "phone",
+     "email",
+     "fullName",
+     "zip"
+    ]
+   }
+  ],
+  "phones": [
+   "(740) 392-7106",
+   "(740) 480-2899"
+  ],
+  "oh_street_address_found": [
+   "502 Coshocton Avenue Mount Vernon , OH 43050"
+  ],
+  "tel_links": [
+   "tel:7403927106",
+   "tel:7404802899"
+  ],
+  "has_faq_heading": true,
+  "question_headings": [],
+  "mentions_license_number": false,
+  "mentions_npn": false,
+  "chat_widget": [],
+  "booking_widget": [],
+  "analytics": [
+   "gtag(",
+   "googletagmanager"
+  ],
+  "lorem_ipsum": 0,
+  "placeholder_text": [],
+  "recaptcha": false,
+  "generator": null,
+  "keyword_hits": {
+   "life insurance": 14,
+   "term life": 2,
+   "whole life": 3,
+   "final expense": 0,
+   "mortgage protection": 0,
+   "annuit": 0,
+   "medicare": 0,
+   "retirement": 9,
+   "long-term care": 3,
+   "ohio": 1,
+   "columbus": 0,
+   "mount vernon": 2,
+   "knox county": 0,
+   "licensed": 1,
+   "veteran": 0,
+   "federal": 0,
+   "IUL|indexed universal": 0
+  }
+ },
+ {
+  "label": "comp_madison_collins_stephens",
+  "source": "firecrawl rawHtml -> crawl4ai raw: (comp_madison_collins_stephens.html)",
+  "crawl4ai_success": true,
+  "html_bytes": 447114,
+  "inline_style_bytes": 99875,
+  "script_tags": 91,
+  "title": "Madison Collins Stephens Agency - Ohio Insurance Solutions",
+  "title_len": 58,
+  "meta_description": "With two agency locations in Ohio, Madison Collins Stephens Agency is an independent insurance agency with a range of options for your needs.",
+  "meta_robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+  "canonical": "https://mcsinsurance.com/",
+  "viewport": true,
+  "h1": [
+   "No Matter Your Risks, We Have Insurance Solutions for You"
+  ],
+  "h1_count": 1,
+  "h2_sample": [
+   "There isn\u2019t much we haven\u2019t seen at Madison Collins Stephens Agency , so we know how to help you."
+  ],
+  "h2_count": 1,
+  "word_count_markdown": 59647,
+  "word_count_visible_text": 2620,
+  "internal_links": 56,
+  "external_links": 3,
+  "external_link_domains": [
+   "mailto:info@mcsinsurance.com",
+   "tel:740-345-2000",
+   "tel:740-392-9888"
+  ],
+  "jsonld_types": [
+   "BreadcrumbList",
+   "EntryPoint",
+   "ImageObject",
+   "ListItem",
+   "Organization",
+   "PropertyValueSpecification",
+   "ReadAction",
+   "SearchAction",
+   "SiteNavigationElement",
+   "WebPage",
+   "WebSite"
+  ],
+  "microdata_types": [],
+  "images": 6,
+  "images_missing_alt": 0,
+  "forms": [
+   {
+    "action": "https://mcsinsurance.com/",
+    "fields": [
+     "s"
+    ]
+   },
+   {
+    "action": "https://mcsinsurance.com/",
+    "fields": [
+     "input_17",
+     "input_1.3",
+     "input_1.6",
+     "input_3",
+     "input_4",
+     "input_16",
+     "input_16",
+     "input_15.1",
+     "input_15.2",
+     "input_15.3",
+     "input_9",
+     "ak_hp_textarea"
+    ]
+   },
+   {
+    "action": "https://mcsinsurance.com/",
+    "fields": [
+     "input_16",
+     "input_1.3",
+     "input_1.6",
+     "input_3",
+     "input_4",
+     "input_15",
+     "input_15",
+     "input_9",
+     "ak_hp_textarea"
+    ]
+   }
+  ],
+  "phones": [
+   "740-345-2000",
+   "740-392-9888"
+  ],
+  "oh_street_address_found": [],
+  "tel_links": [
+   "tel:740-345-2000",
+   "tel:740-392-9888"
+  ],
+  "has_faq_heading": false,
+  "question_headings": [],
+  "mentions_license_number": false,
+  "mentions_npn": false,
+  "chat_widget": [
+   "crisp"
+  ],
+  "booking_widget": [],
+  "analytics": [
+   "gtag(",
+   "googletagmanager"
+  ],
+  "lorem_ipsum": 0,
+  "placeholder_text": [],
+  "recaptcha": false,
+  "generator": "Powered by WPBakery Page Builder - drag and drop page builder for WordPress.",
+  "keyword_hits": {
+   "life insurance": 0,
+   "term life": 0,
+   "whole life": 0,
+   "final expense": 0,
+   "mortgage protection": 0,
+   "annuit": 0,
+   "medicare": 5,
+   "retirement": 0,
+   "long-term care": 0,
+   "ohio": 4,
+   "columbus": 0,
+   "mount vernon": 5,
+   "knox county": 0,
+   "licensed": 2,
+   "veteran": 0,
+   "federal": 0,
+   "IUL|indexed universal": 0
+  }
+ },
+ {
+  "label": "comp_dumbaugh",
+  "source": "firecrawl rawHtml -> crawl4ai raw: (comp_dumbaugh.html)",
+  "crawl4ai_success": true,
+  "html_bytes": 121940,
+  "inline_style_bytes": 32007,
+  "script_tags": 19,
+  "title": "Mount Vernon Ohio Insurance Agency | Dumbaugh Insurance",
+  "title_len": 55,
+  "meta_description": "If you live in Mount Vernon, Fredericktown, or Delaware Ohio, Dumbaugh Insurance is the only company you need for your insurance needs. Call (740) 397-1234",
+  "meta_robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+  "canonical": "https://www.dumbaughinsurance.com/",
+  "viewport": true,
+  "h1": [
+   "Ohio's Premier Independent Insurance Agency"
+  ],
+  "h1_count": 1,
+  "h2_sample": [
+   "Get Better Coverage & Better Rates With Dumbaugh Insurance",
+   "Dumbaugh Insurance is truly your partner in protection",
+   "Whether it's you, your family or your business, we can create a coverage plan specifically for your unique needs"
+  ],
+  "h2_count": 3,
+  "word_count_markdown": 942,
+  "word_count_visible_text": 789,
+  "internal_links": 38,
+  "external_links": 3,
+  "external_link_domains": [
+   "mailto:service@dumbaughinsurance.com",
+   "tel:740-397-1234%20",
+   "tel:7403971234"
+  ],
+  "jsonld_types": [
+   "BreadcrumbList",
+   "ContactPoint",
+   "EntryPoint",
+   "ImageObject",
+   "InsuranceAgency",
+   "ListItem",
+   "Organization",
+   "PostalAddress",
+   "PropertyValueSpecification",
+   "ReadAction",
+   "SearchAction",
+   "WebPage",
+   "WebSite"
+  ],
+  "microdata_types": [
+   "https://schema.org/ImageObject",
+   "https://schema.org/Organization",
+   "https://schema.org/SiteNavigationElement",
+   "https://schema.org/WPFooter",
+   "https://schema.org/WPHeader",
+   "https://schema.org/WebPage"
+  ],
+  "images": 6,
+  "images_missing_alt": 1,
+  "forms": [],
+  "phones": [
+   "(740) 397-1234"
+  ],
+  "oh_street_address_found": [
+   "122 South Main Street Mount Vernon, OH 43050"
+  ],
+  "tel_links": [
+   "tel:740-397-1234%20",
+   "tel:7403971234"
+  ],
+  "has_faq_heading": false,
+  "question_headings": [],
+  "mentions_license_number": false,
+  "mentions_npn": false,
+  "chat_widget": [
+   "crisp"
+  ],
+  "booking_widget": [],
+  "analytics": [
+   "googletagmanager"
+  ],
+  "lorem_ipsum": 0,
+  "placeholder_text": [],
+  "recaptcha": false,
+  "generator": null,
+  "keyword_hits": {
+   "life insurance": 0,
+   "term life": 0,
+   "whole life": 0,
+   "final expense": 0,
+   "mortgage protection": 0,
+   "annuit": 0,
+   "medicare": 0,
+   "retirement": 0,
+   "long-term care": 0,
+   "ohio": 10,
+   "columbus": 0,
+   "mount vernon": 15,
+   "knox county": 0,
+   "licensed": 0,
+   "veteran": 0,
+   "federal": 0,
+   "IUL|indexed universal": 0
+  }
+ },
+ {
+  "label": "comp_peak_retirement",
+  "source": "firecrawl rawHtml -> crawl4ai raw: (comp_peak_retirement.html)",
+  "crawl4ai_success": true,
+  "html_bytes": 1181619,
+  "inline_style_bytes": 608336,
+  "script_tags": 78,
+  "title": "Peak Retirement Planning, Inc. | Financial Advising Services in Columbus, OH 43214",
+  "title_len": 82,
+  "meta_description": "We serve Midwestern Millionaires: those in or near retirement, with $1M + saved, who hate taxes, and have pensions.",
+  "meta_robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+  "canonical": "https://peakretirementplanning.com/",
+  "viewport": true,
+  "h1": [
+   "We Serve Midwestern Millionaires \u2120",
+   "We Serve Midwestern Millionaires \u2120"
+  ],
+  "h1_count": 2,
+  "h2_sample": [
+   "Click here to request a copy of Joe's Book! (opens in new tab)",
+   "Check out our top retirement planning channel on (opens in new tab)",
+   "Kiplinger Advisor Intel Contributor",
+   "Subscribe and Listen to Joe's Podcast!",
+   "Check Out Peak Retirement Planning On The News",
+   "",
+   "We Serve \"Midwestern Millionaires\""
+  ],
+  "h2_count": 7,
+  "word_count_markdown": 900,
+  "word_count_visible_text": 811,
+  "internal_links": 31,
+  "external_links": 2,
+  "external_link_domains": [
+   "mailto:Info@peakretirementplanning.com",
+   "tel:614.500.4121"
+  ],
+  "jsonld_types": [
+   "ContactPoint",
+   "GeoCoordinates",
+   "LocalBusiness",
+   "OpeningHoursSpecification",
+   "Organization",
+   "PostalAddress",
+   "WebSite"
+  ],
+  "microdata_types": [
+   "http://schema.org/WPFooter",
+   "http://schema.org/WPHeader",
+   "https://schema.org/CreativeWork",
+   "https://schema.org/ImageObject",
+   "https://schema.org/WebPage"
+  ],
+  "images": 25,
+  "images_missing_alt": 0,
+  "forms": [],
+  "phones": [
+   "614.500.4121"
+  ],
+  "oh_street_address_found": [
+   "3600 Olentangy River Road, Building 501 Columbus, Ohio 43214"
+  ],
+  "tel_links": [
+   "tel:614.500.4121"
+  ],
+  "has_faq_heading": false,
+  "question_headings": [],
+  "mentions_license_number": false,
+  "mentions_npn": false,
+  "chat_widget": [
+   "drift",
+   "tidio"
+  ],
+  "booking_widget": [],
+  "analytics": [
+   "gtag(",
+   "googletagmanager"
+  ],
+  "lorem_ipsum": 0,
+  "placeholder_text": [],
+  "recaptcha": false,
+  "generator": null,
+  "keyword_hits": {
+   "life insurance": 0,
+   "term life": 0,
+   "whole life": 0,
+   "final expense": 0,
+   "mortgage protection": 0,
+   "annuit": 3,
+   "medicare": 2,
+   "retirement": 11,
+   "long-term care": 0,
+   "ohio": 1,
+   "columbus": 2,
+   "mount vernon": 0,
+   "knox county": 0,
+   "licensed": 0,
+   "veteran": 0,
+   "federal": 0,
+   "IUL|indexed universal": 0
+  }
+ },
+ {
+  "label": "comp_tim_workman_statefarm",
+  "source": "firecrawl rawHtml -> crawl4ai raw: (comp_tim_workman_statefarm.html)",
+  "crawl4ai_success": true,
+  "html_bytes": 958613,
+  "inline_style_bytes": 238235,
+  "script_tags": 90,
+  "title": "OH Auto & Home Insurance Agent Tim Workman - State Farm\u00ae",
+  "title_len": 56,
+  "meta_description": "Call (740) 397-1889 for life, home, car insurance and more. Get a free quote from State Farm Agent Tim Workman in Mt. Vernon, OH",
+  "meta_robots": null,
+  "canonical": "https://timworkmanagency.com/",
+  "viewport": true,
+  "h1": [
+   "Tim Workman",
+   "Tim Workman"
+  ],
+  "h1_count": 2,
+  "h2_sample": [
+   "Tim Workman Insurance Agcy Inc",
+   "Tim Workman Insurance Agcy Inc",
+   "About me",
+   "Office Info",
+   "Get a quote today",
+   "Office Info",
+   "Insurance and Financial products offered",
+   "Insurance",
+   "Financial Services",
+   "Banking",
+   "Call us 24/7 at (740) 397-1889",
+   "Our mission",
+   "Our team",
+   "Meet the team",
+   "Current openings"
+  ],
+  "h2_count": 22,
+  "word_count_markdown": 776129,
+  "word_count_visible_text": 3455,
+  "internal_links": 52,
+  "external_links": 2,
+  "external_link_domains": [
+   "tel:7403971889",
+   "tel:8557337333"
+  ],
+  "jsonld_types": [
+   "Brand",
+   "GeoCoordinates",
+   "ImageObject",
+   "InsuranceAgency",
+   "Offer",
+   "OfferCatalog",
+   "Organization",
+   "Person",
+   "PostalAddress",
+   "Service",
+   "WebSite"
+  ],
+  "microdata_types": [],
+  "images": 41,
+  "images_missing_alt": 25,
+  "forms": [
+   {
+    "action": "https://www.timworkmanagency.com/#",
+    "fields": [
+     "field-auto",
+     "field-zip",
+     "field-state",
+     "field-zip",
+     "field-state"
+    ]
+   },
+   {
+    "action": null,
+    "fields": [
+     "radio",
+     "radio",
+     "radio",
+     "contact-form-name",
+     "contact-form-phone",
+     "contact-form-email",
+     "",
+     "checkbox"
+    ]
+   },
+   {
+    "action": null,
+    "fields": [
+     "contact-form-pref-1",
+     "contact-form-pref-1",
+     "contact-form-pref-1",
+     "contact-form-name",
+     "contact-form-phone",
+     "contact-form-email",
+     "contact-form-message-1",
+     "checkbox",
+     "contact-form-checkbox-input-1-AutoInsurance",
+     "contact-form-checkbox-input-1-Banking",
+     "contact-form-checkbox-input-1-HomePropertyInsurance",
+     "contact-form-checkbox-input-1-Investments",
+     "contact-form-checkbox-input-1-LifeInsurance",
+     "contact-form-checkbox-input-1-SmallBusinessInsurance",
+     "contact-form-checkbox-input-1-Other",
+     "m2-cf-attachments"
+    ]
+   }
+  ],
+  "phones": [
+   "(740) 397-1889",
+   "(855) 733-7333",
+   "330-659-7522",
+   "740-397-1889",
+   "740.397.1889"
+  ],
+  "oh_street_address_found": [
+   "1590 Coshocton Ave. Suite A Mt. Vernon, OH 43050",
+   "1590 Coshocton Ave. Suite A Mt. Vernon, OH 43050",
+   "1590 Coshocton Ave. Suite A Mt. Vernon, OH 43050"
+  ],
+  "tel_links": [
+   "tel:7403971889",
+   "tel:8557337333"
+  ],
+  "has_faq_heading": false,
+  "question_headings": [
+   "Is a natural gas detector worth it?",
+   "Is a natural gas detector worth it?"
+  ],
+  "mentions_license_number": true,
+  "mentions_npn": true,
+  "chat_widget": [
+   "hubspot"
+  ],
+  "booking_widget": [
+   "calendly",
+   "booking"
+  ],
+  "analytics": [],
+  "lorem_ipsum": 0,
+  "placeholder_text": [],
+  "recaptcha": true,
+  "generator": null,
+  "keyword_hits": {
+   "life insurance": 8,
+   "term life": 0,
+   "whole life": 0,
+   "final expense": 0,
+   "mortgage protection": 0,
+   "annuit": 3,
+   "medicare": 1,
+   "retirement": 2,
+   "long-term care": 0,
+   "ohio": 14,
+   "columbus": 0,
+   "mount vernon": 3,
+   "knox county": 4,
+   "licensed": 8,
+   "veteran": 1,
+   "federal": 0,
+   "IUL|indexed universal": 0
+  }
+ }
+]

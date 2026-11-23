@@ -1,0 +1,121 @@
+{
+ "monthly_demand_ohio": 3081,
+ "queries": {
+  "iul insurance + indexed universal life insurance": 650,
+  "fers retirement planning": 390,
+  "veterans life insurance / life insurance for veterans (same metrics, counted once)": 110,
+  "long term care insurance ohio": 110,
+  "term vs whole life insurance": 720,
+  "how much life insurance do i need": 260,
+  "fixed indexed annuity": 50,
+  "mortgage protection insurance": 480,
+  "life insurance ohio": 170,
+  "life insurance near me + life insurance agent near me (x0.19 service-area share)": 141
+ },
+ "found": {
+  "low": {
+   "clicks_yr": 369.72,
+   "inquiries_yr": 3.6972000000000005,
+   "qualified_yr": 1.8486000000000002,
+   "appts_yr": 0.9243000000000001,
+   "policies_yr": 0.23107500000000003,
+   "fyc_yr": 577.6875000000001
+  },
+  "base": {
+   "clicks_yr": 924.3000000000001,
+   "inquiries_yr": 18.486,
+   "qualified_yr": 11.0916,
+   "appts_yr": 6.65496,
+   "policies_yr": 1.9964879999999998,
+   "fyc_yr": 6987.708
+  },
+  "high": {
+   "clicks_yr": 1848.6000000000001,
+   "inquiries_yr": 55.458000000000006,
+   "qualified_yr": 38.8206,
+   "appts_yr": 27.174419999999998,
+   "policies_yr": 9.511046999999998,
+   "fyc_yr": 47555.234999999986
+  }
+ },
+ "handled": {
+  "low": {
+   "policies_now_yr": 6.911999999999999,
+   "policies_new_yr": 10.08,
+   "uplift_policies_yr": 3.168000000000001,
+   "uplift_fyc_yr": 7920.000000000003
+  },
+  "base": {
+   "policies_now_yr": 13.823999999999998,
+   "policies_new_yr": 23.759999999999998,
+   "uplift_policies_yr": 9.936,
+   "uplift_fyc_yr": 34776.0
+  },
+  "high": {
+   "policies_now_yr": 20.736000000000004,
+   "policies_new_yr": 38.88,
+   "uplift_policies_yr": 18.144,
+   "uplift_fyc_yr": 90719.99999999999
+  }
+ },
+ "assumptions": {
+  "found": {
+   "low": {
+    "ctr": 0.01,
+    "inquiry": 0.01,
+    "qualified": 0.5,
+    "appt_kept": 0.5,
+    "close": 0.25,
+    "fyc": 2500
+   },
+   "base": {
+    "ctr": 0.025,
+    "inquiry": 0.02,
+    "qualified": 0.6,
+    "appt_kept": 0.6,
+    "close": 0.3,
+    "fyc": 3500
+   },
+   "high": {
+    "ctr": 0.05,
+    "inquiry": 0.03,
+    "qualified": 0.7,
+    "appt_kept": 0.7,
+    "close": 0.35,
+    "fyc": 5000
+   }
+  },
+  "handled": {
+   "low": {
+    "leads": 20,
+    "contact_now": 0.4,
+    "contact_new": 0.5,
+    "set": 0.4,
+    "show_now": 0.6,
+    "show_new": 0.7,
+    "close": 0.3,
+    "fyc": 2500
+   },
+   "base": {
+    "leads": 40,
+    "contact_now": 0.4,
+    "contact_new": 0.55,
+    "set": 0.4,
+    "show_now": 0.6,
+    "show_new": 0.75,
+    "close": 0.3,
+    "fyc": 3500
+   },
+   "high": {
+    "leads": 60,
+    "contact_now": 0.4,
+    "contact_new": 0.6,
+    "set": 0.4,
+    "show_now": 0.6,
+    "show_new": 0.75,
+    "close": 0.3,
+    "fyc": 5000
+   }
+  }
+ }
+}

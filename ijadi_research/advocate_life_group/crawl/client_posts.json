@@ -1,0 +1,353 @@
+[
+ {
+  "label": "post_term_vs_whole",
+  "source": "firecrawl rawHtml -> crawl4ai raw: (client_post_term_vs_whole.html)",
+  "crawl4ai_success": true,
+  "html_bytes": 1748710,
+  "inline_style_bytes": 1312643,
+  "script_tags": 149,
+  "title": "Term Life vs Whole Life for Retirement Planning \u2013 Advocate Life Group",
+  "title_len": 69,
+  "meta_description": "A life insurance decision can affect far more than a monthly premium. For a household approaching retirement, term life vs whole life is often a question about protecting a spouse\u2019s income, preserving assets, covering a remaining mortgage, and creating an intentional legacy. The better choice is not",
+  "meta_robots": "max-image-preview:large",
+  "canonical": "https://advocatelifegroup.com/term-life-vs-whole-life-retirement-planning/",
+  "viewport": true,
+  "h1": [
+   "Term Life vs Whole Life for Retirement Planning",
+   "Our E-newsletter",
+   "Contact Us"
+  ],
+  "h1_count": 3,
+  "h2_sample": [
+   "Term Life vs Whole Life: The Core Difference",
+   "When Term Life Insurance May Be the Better Fit",
+   "When Whole Life Insurance May Be the Better Fit",
+   "Questions to Ask Before Choosing Coverage",
+   "Make Life Insurance Part of a Coordinated Plan",
+   "Related Posts",
+   "Contact Us",
+   "Speak With Advocate Life Group Today!",
+   "Speak With Advocate Life Group Today!",
+   "Rita Nelson",
+   "Steve Markes",
+   "April Drew",
+   "Athan Poullas"
+  ],
+  "h2_count": 13,
+  "word_count_markdown": 6309,
+  "word_count_visible_text": 5997,
+  "internal_links": 22,
+  "external_links": 5,
+  "external_link_domains": [
+   "mailto:?body=https%3A%2F%2Fadvocatelifegroup.com%2Fterm-life-vs-whole-life-retirement-planning%2F&subject=Term+Life+vs+Whole+Life+for+Retirement+Planning",
+   "mailto:athan@advocatelifegroup.com",
+   "mailto:contact@llonebeacon.com",
+   "tel:(617) 650-1578",
+   "tel:+16176501578"
+  ],
+  "jsonld_types": [],
+  "microdata_types": [],
+  "images": 35,
+  "images_missing_alt": 21,
+  "forms": [
+   {
+    "action": "https://advocatelifegroup.com/",
+    "fields": [
+     "s"
+    ]
+   },
+   {
+    "action": "https://advocatelifegroup.com/",
+    "fields": [
+     "cat"
+    ]
+   },
+   {
+    "action": "https://advocatelifegroup.com/term-life-vs-whole-life-retirement-planning/#wpcf7-f16541-o1",
+    "fields": [
+     "first-name",
+     "last-name",
+     "your-email"
+    ]
+   },
+   {
+    "action": "https://advocatelifegroup.com/term-life-vs-whole-life-retirement-planning/#wpcf7-f21500-o2",
+    "fields": [
+     "first-name",
+     "last-name",
+     "email",
+     "phone",
+     "menu-705",
+     "menu-558"
+    ]
+   },
+   {
+    "action": "https://advocatelifegroup.com/term-life-vs-whole-life-retirement-planning/#wpcf7-f21497-o3",
+    "fields": [
+     "first-name",
+     "last-name",
+     "email",
+     "phone",
+     "menu-705",
+     "menu-558"
+    ]
+   },
+   {
+    "action": "https://advocatelifegroup.com/term-life-vs-whole-life-retirement-planning/#wpcf7-f21494-o4",
+    "fields": [
+     "first-name",
+     "last-name",
+     "email",
+     "phone",
+     "menu-705",
+     "menu-558"
+    ]
+   },
+   {
+    "action": "https://advocatelifegroup.com/term-life-vs-whole-life-retirement-planning/#wpcf7-f21491-o5",
+    "fields": [
+     "first-name",
+     "last-name",
+     "email",
+     "phone",
+     "menu-705",
+     "menu-558"
+    ]
+   },
+   {
+    "action": "https://advocatelifegroup.com/term-life-vs-whole-life-retirement-planning/#wpcf7-f21488-o6",
+    "fields": [
+     "first-name",
+     "last-name",
+     "email",
+     "phone",
+     "menu-705",
+     "menu-558"
+    ]
+   }
+  ],
+  "phones": [
+   "(617) 650-1578"
+  ],
+  "oh_street_address_found": [],
+  "tel_links": [
+   "tel:(617) 650-1578",
+   "tel:+16176501578"
+  ],
+  "has_faq_heading": false,
+  "question_headings": [],
+  "mentions_license_number": false,
+  "mentions_npn": false,
+  "chat_widget": [
+   "intercom",
+   "hubspot",
+   "crisp"
+  ],
+  "booking_widget": [],
+  "analytics": [
+   "hotjar"
+  ],
+  "lorem_ipsum": 4,
+  "placeholder_text": [
+   "insert link",
+   "lorem ipsum"
+  ],
+  "recaptcha": true,
+  "generator": null,
+  "keyword_hits": {
+   "life insurance": 12,
+   "term life": 8,
+   "whole life": 14,
+   "final expense": 2,
+   "mortgage protection": 0,
+   "annuit": 4,
+   "medicare": 2,
+   "retirement": 47,
+   "long-term care": 4,
+   "ohio": 5,
+   "columbus": 0,
+   "mount vernon": 3,
+   "knox county": 0,
+   "licensed": 0,
+   "veteran": 0,
+   "federal": 2,
+   "IUL|indexed universal": 0
+  }
+ },
+ {
+  "label": "post_life_ins_retirement",
+  "source": "firecrawl rawHtml -> crawl4ai raw: (client_post_life_ins_retirement.html)",
+  "crawl4ai_success": true,
+  "html_bytes": 1748025,
+  "inline_style_bytes": 1312643,
+  "script_tags": 149,
+  "title": "Is Life Insurance Good for Retirement Planning? \u2013 Advocate Life Group",
+  "title_len": 69,
+  "meta_description": "A retiree with a healthy portfolio can still face a difficult question: what happens if a market decline, higher taxes, or a spouse\u2019s death changes the plan? That is why people ask, is life insurance good for retirement? The honest answer is that it can be, but only when the policy is designed to so",
+  "meta_robots": "max-image-preview:large",
+  "canonical": "https://advocatelifegroup.com/is-life-insurance-good-for-retirement/",
+  "viewport": true,
+  "h1": [
+   "Is Life Insurance Good for Retirement Planning?",
+   "Our E-newsletter",
+   "Contact Us"
+  ],
+  "h1_count": 3,
+  "h2_sample": [
+   "When Life Insurance Can Support Retirement",
+   "Is Life Insurance Good for Retirement Income?",
+   "When Life Insurance May Not Be the Right Retirement Tool",
+   "A Better Way to Evaluate the Decision",
+   "Related Posts",
+   "Contact Us",
+   "Speak With Advocate Life Group Today!",
+   "Speak With Advocate Life Group Today!",
+   "Rita Nelson",
+   "Steve Markes",
+   "April Drew",
+   "Athan Poullas"
+  ],
+  "h2_count": 12,
+  "word_count_markdown": 6345,
+  "word_count_visible_text": 6024,
+  "internal_links": 22,
+  "external_links": 5,
+  "external_link_domains": [
+   "mailto:?body=https%3A%2F%2Fadvocatelifegroup.com%2Fis-life-insurance-good-for-retirement%2F&subject=Is+Life+Insurance+Good+for+Retirement+Planning%3F",
+   "mailto:athan@advocatelifegroup.com",
+   "mailto:contact@llonebeacon.com",
+   "tel:(617) 650-1578",
+   "tel:+16176501578"
+  ],
+  "jsonld_types": [],
+  "microdata_types": [],
+  "images": 35,
+  "images_missing_alt": 21,
+  "forms": [
+   {
+    "action": "https://advocatelifegroup.com/",
+    "fields": [
+     "s"
+    ]
+   },
+   {
+    "action": "https://advocatelifegroup.com/",
+    "fields": [
+     "cat"
+    ]
+   },
+   {
+    "action": "https://advocatelifegroup.com/is-life-insurance-good-for-retirement/#wpcf7-f16541-o1",
+    "fields": [
+     "first-name",
+     "last-name",
+     "your-email"
+    ]
+   },
+   {
+    "action": "https://advocatelifegroup.com/is-life-insurance-good-for-retirement/#wpcf7-f21500-o2",
+    "fields": [
+     "first-name",
+     "last-name",
+     "email",
+     "phone",
+     "menu-705",
+     "menu-558"
+    ]
+   },
+   {
+    "action": "https://advocatelifegroup.com/is-life-insurance-good-for-retirement/#wpcf7-f21497-o3",
+    "fields": [
+     "first-name",
+     "last-name",
+     "email",
+     "phone",
+     "menu-705",
+     "menu-558"
+    ]
+   },
+   {
+    "action": "https://advocatelifegroup.com/is-life-insurance-good-for-retirement/#wpcf7-f21494-o4",
+    "fields": [
+     "first-name",
+     "last-name",
+     "email",
+     "phone",
+     "menu-705",
+     "menu-558"
+    ]
+   },
+   {
+    "action": "https://advocatelifegroup.com/is-life-insurance-good-for-retirement/#wpcf7-f21491-o5",
+    "fields": [
+     "first-name",
+     "last-name",
+     "email",
+     "phone",
+     "menu-705",
+     "menu-558"
+    ]
+   },
+   {
+    "action": "https://advocatelifegroup.com/is-life-insurance-good-for-retirement/#wpcf7-f21488-o6",
+    "fields": [
+     "first-name",
+     "last-name",
+     "email",
+     "phone",
+     "menu-705",
+     "menu-558"
+    ]
+   }
+  ],
+  "phones": [
+   "(617) 650-1578"
+  ],
+  "oh_street_address_found": [],
+  "tel_links": [
+   "tel:(617) 650-1578",
+   "tel:+16176501578"
+  ],
+  "has_faq_heading": false,
+  "question_headings": [
+   "Is Life Insurance Good for Retirement Income?"
+  ],
+  "mentions_license_number": false,
+  "mentions_npn": false,
+  "chat_widget": [
+   "intercom",
+   "hubspot",
+   "crisp"
+  ],
+  "booking_widget": [],
+  "analytics": [
+   "hotjar"
+  ],
+  "lorem_ipsum": 4,
+  "placeholder_text": [
+   "insert link",
+   "lorem ipsum"
+  ],
+  "recaptcha": true,
+  "generator": null,
+  "keyword_hits": {
+   "life insurance": 20,
+   "term life": 4,
+   "whole life": 3,
+   "final expense": 1,
+   "mortgage protection": 0,
+   "annuit": 5,
+   "medicare": 4,
+   "retirement": 50,
+   "long-term care": 5,
+   "ohio": 5,
+   "columbus": 0,
+   "mount vernon": 3,
+   "knox county": 0,
+   "licensed": 0,
+   "veteran": 0,
+   "federal": 2,
+   "IUL|indexed universal": 1
+  }
+ }
+]

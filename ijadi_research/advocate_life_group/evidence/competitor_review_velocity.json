@@ -1,0 +1,11 @@
+{"source": "Alexandria firecrawl-maps businesses/rating_trend (newest 60 Google Maps reviews per place)", "checked_utc": "2026-11-23T17:44Z",
+ "note": "reviews_last_12mo = sum of monthly counts Dec-2025..Nov-2026 within the 60-review sample",
+ "places": [
+  {"name": "Madison Collins Stephens Agency", "feature_id": "0x8839ccda1add6891:0xe912cbfdff8c2468", "rating": 5.0, "total_reviews": 127, "reviews_last_12mo": 30, "owner_response_rate_sample": 0.67},
+  {"name": "Dumbaugh Insurance", "feature_id": "0x8839cb5296f17fc3:0x57480f2346e195bc", "rating": 5.0, "total_reviews": 156, "reviews_last_12mo": 13, "owner_response_rate_sample": 0.55},
+  {"name": "Tim Workman - State Farm", "feature_id": "0x8839ccdb5adcaa27:0xa11b2f124775d3b2", "rating": 4.9, "total_reviews": 352, "reviews_last_12mo": 40, "owner_response_rate_sample": 0.98},
+  {"name": "DePolo & Associates (Allstate)", "feature_id": "0x8839cb5408fc0a6d:0x37f18b514c0706d1", "rating": 4.6, "total_reviews": 190, "reviews_last_12mo": 30, "owner_response_rate_sample": 0.97},
+  {"name": "Western & Southern Life - Mount Vernon", "feature_id": "0x8839ccba0b206641:0xcdb003749fb73c48", "rating": 4.4, "total_reviews": 9, "reviews_last_12mo": 1, "owner_response_rate_sample": 0.44},
+  {"name": "Peak Retirement Planning (Columbus)", "feature_id": "0x88388be02ae150d9:0xc10f12d379b8e438", "rating": 5.0, "total_reviews": 453, "reviews_last_12mo": "60+ (60 in Oct-Nov 2026 alone)", "owner_response_rate_sample": 0.97},
+  {"name": "Advocate Life Group", "google_listing": "Not found (firecrawl-maps search by name, nationwide and Mount Vernon)", "trustpilot": {"rating": 4.4, "reviews": 10, "reviews_last_12mo": 10, "owner_replies": 3, "last_owner_reply": "2026-01-13"}}
+ ]}

@@ -1,0 +1,39 @@
+keyword,avg_monthly_searches_ohio,competition,cpc_usd,note
+life insurance agent near me,260,LOW,30.56,identical metrics to "life insurance agency near me" (Google Ads grouping)
+life insurance agency near me,260,LOW,30.56,see above
+life insurance near me,480,LOW,29.08,Oct-2026 spike 3600 (open enrollment season)
+life insurance columbus ohio,20,HIGH,13.92,
+life insurance agent columbus ohio,,,,no data returned
+life insurance mount vernon ohio,,,,no data returned (too small)
+insurance agency mount vernon ohio,,,,no data returned
+independent life insurance agent,20,LOW,59.29,
+independent insurance agent near me,480,LOW,20.97,mostly P&C intent
+term life insurance ohio,20,MEDIUM,57.23,
+life insurance ohio,170,MEDIUM,36.43,
+whole life insurance,6600,LOW,25.78,broad/national-intent; excluded from model
+final expense insurance ohio,10,MEDIUM,,
+final expense insurance,320,MEDIUM,12.72,
+mortgage protection insurance,480,MEDIUM,16.65,
+mortgage protection life insurance,40,LOW,36.82,
+indexed universal life insurance,260,MEDIUM,8.60,
+iul insurance,390,MEDIUM,10.06,
+annuity advisor near me,,,,no data returned
+annuities columbus ohio,,,,no data returned
+retirement planning columbus ohio,10,LOW,22.69,
+retirement planner near me,90,HIGH,11.09,
+financial advisor mount vernon ohio,,,,no data returned
+retirement income planning,40,LOW,,
+fixed indexed annuity,50,MEDIUM,6.46,
+veterans life insurance,110,MEDIUM,17.73,identical metrics to "life insurance for veterans"
+life insurance for veterans,110,MEDIUM,17.73,see above
+federal employee retirement planning,10,LOW,,
+fers retirement planning,390,LOW,10.07,
+long term care insurance ohio,110,HIGH,12.74,
+medicare supplement ohio,10,MEDIUM,18.30,
+best life insurance company,590,MEDIUM,32.21,
+how much life insurance do i need,260,MEDIUM,5.94,
+term vs whole life insurance,720,MEDIUM,6.17,
+is iul a good investment,20,LOW,10.64,
+life insurance for seniors over 60,50,MEDIUM,35.17,
+social security planning,10,LOW,0.12,
+roth conversion,390,LOW,3.67,informational; excluded from model

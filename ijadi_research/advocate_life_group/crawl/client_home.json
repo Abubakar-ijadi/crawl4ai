@@ -1,0 +1,188 @@
+[
+ {
+  "label": "client_home",
+  "source": "firecrawl rawHtml -> crawl4ai raw: (client_home.html)",
+  "crawl4ai_success": true,
+  "html_bytes": 1936062,
+  "inline_style_bytes": 1323388,
+  "script_tags": 179,
+  "title": "Advocate Life Group \u2013 Retire Confidently",
+  "title_len": 40,
+  "meta_description": "Retirement Planning \n     \nRetirement is personal. You\u2019ve worked hard to save and invest your money and now it\u2019s time to optimize and protect your savings to provide for your retirement and your loved ones thereafter.\nAdvocate Life Group is an independent financial services firm, specializing in hel",
+  "meta_robots": "max-image-preview:large",
+  "canonical": "https://advocatelifegroup.com/",
+  "viewport": true,
+  "h1": [
+   "Retire Confidently.",
+   "Advocate Life Group",
+   "Our E-newsletter",
+   "Contact Us"
+  ],
+  "h1_count": 4,
+  "h2_sample": [
+   "Our Planning Process",
+   "Longevity",
+   "Inflation",
+   "Mortality",
+   "Liquidity",
+   "Market",
+   "Taxes",
+   "Meet The Advisor",
+   "Athan Poullas",
+   "Events in November 2026\u2013January 2027",
+   "Qualified Longevity Annuity Versus Bond Ladder",
+   "Retirement Tax Law Changes That Demand a Plan",
+   "Fixed Annuity Review Guide for Retirement Planning",
+   "Schedule Your Complimentary Retirement Review Today!",
+   "Contact Us"
+  ],
+  "h2_count": 21,
+  "word_count_markdown": 6088,
+  "word_count_visible_text": 5820,
+  "internal_links": 24,
+  "external_links": 4,
+  "external_link_domains": [
+   "mailto:athan@advocatelifegroup.com",
+   "mailto:contact@llonebeacon.com",
+   "tel:(617) 650-1578",
+   "tel:+16176501578"
+  ],
+  "jsonld_types": [],
+  "microdata_types": [],
+  "images": 40,
+  "images_missing_alt": 29,
+  "forms": [
+   {
+    "action": "https://advocatelifegroup.com/",
+    "fields": [
+     "month",
+     "yr"
+    ]
+   },
+   {
+    "action": "https://www.calcxml.com/do/savings-goal-calculator",
+    "fields": [
+     "initialBalance",
+     "savingsGoal",
+     "beforeTaxReturn",
+     "taxBracket"
+    ]
+   },
+   {
+    "action": "https://www.calcxml.com/do/social-security-retirement-income-estimator",
+    "fields": [
+     "clientIncome",
+     "clientAge",
+     "clientSsage",
+     "spouseIncome",
+     "spouseAge",
+     "spouseSsage",
+     "ssInflation"
+    ]
+   },
+   {
+    "action": "https://www.calcxml.com/do/ret05",
+    "fields": [
+     "currentAge",
+     "clientIncome",
+     "inflation",
+     "retirementAge",
+     "lifeAge",
+     "incomeReplacement"
+    ]
+   },
+   {
+    "action": "https://www.calcxml.com/do/investment-return",
+    "fields": [
+     "beforeTaxReturn",
+     "stateTaxBracket",
+     "taxBracket",
+     "itemize",
+     "inflation"
+    ]
+   },
+   {
+    "action": "https://advocatelifegroup.com/#wpcf7-f16541-o1",
+    "fields": [
+     "first-name",
+     "last-name",
+     "your-email"
+    ]
+   },
+   {
+    "action": "https://advocatelifegroup.com/#wpcf7-f21500-o2",
+    "fields": [
+     "first-name",
+     "last-name",
+     "email",
+     "phone",
+     "menu-705",
+     "menu-558"
+    ]
+   },
+   {
+    "action": "https://advocatelifegroup.com/#wpcf7-f21497-o3",
+    "fields": [
+     "first-name",
+     "last-name",
+     "email",
+     "phone",
+     "menu-705",
+     "menu-558"
+    ]
+   }
+  ],
+  "phones": [
+   "(617) 650-1578"
+  ],
+  "oh_street_address_found": [],
+  "tel_links": [
+   "tel:(617) 650-1578",
+   "tel:+16176501578"
+  ],
+  "has_faq_heading": false,
+  "question_headings": [
+   "HOW LONG TO REACH MY SAVINGS GOAL?",
+   "DOES INFLATION IMPACT MY RETIREMENT INCOME NEEDS?",
+   "Ready To Talk?"
+  ],
+  "mentions_license_number": false,
+  "mentions_npn": false,
+  "chat_widget": [
+   "intercom",
+   "hubspot",
+   "crisp"
+  ],
+  "booking_widget": [],
+  "analytics": [
+   "google-analytics",
+   "hotjar"
+  ],
+  "lorem_ipsum": 4,
+  "placeholder_text": [
+   "insert link",
+   "lorem ipsum"
+  ],
+  "recaptcha": true,
+  "generator": null,
+  "keyword_hits": {
+   "life insurance": 3,
+   "term life": 0,
+   "whole life": 0,
+   "final expense": 0,
+   "mortgage protection": 2,
+   "annuit": 5,
+   "medicare": 2,
+   "retirement": 52,
+   "long-term care": 4,
+   "ohio": 6,
+   "columbus": 1,
+   "mount vernon": 3,
+   "knox county": 0,
+   "licensed": 0,
+   "veteran": 1,
+   "federal": 3,
+   "IUL|indexed universal": 0
+  }
+ }
+]

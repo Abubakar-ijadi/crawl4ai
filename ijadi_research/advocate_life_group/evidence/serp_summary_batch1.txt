@@ -1,0 +1,190 @@
+
+=== life insurance agent near me | loc=Mount Vernon,Ohio,United States | checked=2026-11-23 17:42:14 +00:00 | features=['ai_overview', 'local_pack', 'people_also_ask', 'organic', 'related_searches']
+  [LOCAL PACK abs 1] Madison Collins Stephens Agency | rating 5 (127) | google.com
+  [LOCAL PACK abs 2] Kari Ball Insurance Agency | rating 4.8 (57) | google.com
+  [LOCAL PACK abs 3] Dumbaugh Insurance | rating 5 (156) | google.com
+  [AI OVERVIEW abs 4] refs=[]
+  [PAA abs 5] ['Can you buy life insurance without going through an agent?', 'Who are the big 5 insurance brokers?', 'How much does a $1,000,000 life insurance policy cost per month?', 'Which life insurance company is the most trusted?']
+  # 1 (abs 6) google.com | THE BEST 10 Life Insurance near UNIONTOWN, OH 44685
+  # 2 (abs 7) google.com | TOP 10 BEST Life Insurance Agent in Indianapolis city ...
+  # 3 (abs 8) google.com | TOP 10 BEST Life Insurance in Morgantown, WV
+  # 4 (abs 9) google.com | Life Insurance Agent Near Me
+  # 5 (abs 10) google.com | THE BEST 10 Insurance near ST. MATTHEWS, KY
+  # 6 (abs 11) google.com | TOP 10 BEST Life Insurance in Ellicott City, MD
+  # 7 (abs 12) google.com | Best Life Insurance near Washington, MO 63090
+  # 8 (abs 13) google.com | THE BEST 10 Life Insurance in FISHERS, IN - Updated 2026
+  [related_searches abs 14] 
+  # 9 (abs 15) google.com | Best Insurance Agent near Ocean City, MD
+  #10 (abs 16) google.com | Best Life Insurance Broker near Smyrna, DE
+  #11 (abs 17) google.com | TOP 10 BEST Life Insurance Agent in Jefferson City, MO
+  #12 (abs 18) google.com | TOP 10 BEST Insurance Agent in Saint Paul, MN
+  #13 (abs 19) google.com | Best Independent Insurance Agent near Louisville, CO 80027
+  #14 (abs 20) google.com | TOP 10 BEST Life Insurance Agent in Austin, TX
+  #15 (abs 21) google.com | TOP 10 BEST Independent Insurance Agent in Vestavia ...
+  #16 (abs 22) google.com | Best Independent Insurance Agent near Neosho, MO
+  #17 (abs 23) google.com | TOP 10 BEST Life Insurance Agent in Fremont, CA
+  #18 (abs 24) google.com | Best Life Insurance Agent near Arlington, WA
+  [related_searches abs 25] 
+  >>> advocatelifegroup.com present: False []
+
+=== life insurance mount vernon ohio | loc=Mount Vernon,Ohio,United States | checked=2026-11-23 17:42:02 +00:00 | features=['ai_overview', 'local_pack', 'paid', 'organic', 'people_also_ask']
+  [AD] www.ladderlife.com | Ladder™ | Life Insurance - No Exams & No Doctors
+  [AD] www.aarp-lifeinsurance.com | AARP Life Insurance - Get A Free Quote - See Your Rate
+  [AD] google.com | State Farm® Life Quote | Get a Life Quote Today
+  [AD] google.com | Get Your Quote Within Minutes - $500K Policy Under $19/Month
+  [LOCAL PACK abs 5] Western & Southern Life | rating 4.4 (9) | google.com
+  [LOCAL PACK abs 6] Madison Collins Stephens Agency | rating 5 (127) | google.com
+  [LOCAL PACK abs 7] Dumbaugh Insurance | rating 5 (156) | google.com
+  [AI OVERVIEW abs 8] refs=[]
+  # 1 (abs 9) google.com | Metlife Financial Services
+  [PAA abs 10] ['Which insurance company is headquartered in Ohio?', 'What is the cost of living in Mount Vernon, Ohio?', 'Which life insurance is best in the USA?', 'How to find out if someone has a life insurance policy in Ohio?']
+  # 2 (abs 11) google.com | Joshua Lambert – Financial Advisor in Mount Vernon, OH
+  [AD] google.com | Ladder™ | Life Insurance - No Exams & No Pressure
+  [AD] www.aarp-lifeinsurance.com | AARP Term Life Insurance - Get A Free Quote - See Your Rate
+  # 3 (abs 14) google.com | Metlife Financial Services
+  # 4 (abs 15) google.com | MetLife
+  # 5 (abs 16) google.com | MetLife, 2020 Brice Rd, Reynoldsburg, OH 43068-3428, US
+  # 6 (abs 17) google.com | PG Financial, 103 S Main St, Mount Vernon, OH 43050- ...
+  # 7 (abs 18) google.com | Bingham Insurance Agency LTD
+  # 8 (abs 19) google.com | Shelter Insurance-Josh Miller
+  # 9 (abs 20) google.com | Insurance Agencies in Mount Vernon, OH
+  #10 (abs 21) google.com | MetLife, 215 Deo DR Ste 110, Newark, OH 43055-3048, US
+  #11 (abs 22) google.com | A+ Insurance & Financial Services | Mount Vernon OH
+  #12 (abs 23) google.com | DePolo & Associates, Inc.: Allstate Insurance
+  #13 (abs 24) google.com | Medicare Insurance Agents in South Mount Vernon, OH
+  #14 (abs 25) google.com | AAA, 1 Public Sq, #A, Mount Vernon, OH 43050-3228, US
+  #15 (abs 26) google.com | Safeco Insurance
+  #16 (abs 27) google.com | Insurance Category
+  #17 (abs 28) google.com | Mount Vernon, OH | Seasoned financial advisors for retirees
+  #18 (abs 29) google.com | Bingham Insurance, 3 N Park, Mount Vernon, OH 43050, US
+  >>> advocatelifegroup.com present: False []
+ERR {'code': 'provider_error', 'message': 'We couldn’t complete this request. Please try again later.', 'status': 502}
+
+=== life insurance columbus ohio | loc=Columbus,Ohio,United States | checked=2026-11-23 17:42:03 +00:00 | features=['ai_overview', 'local_pack', 'people_also_ask', 'organic']
+  [LOCAL PACK abs 1] Association of Ohio Life Insurance | rating 5 (5) | None
+  [LOCAL PACK abs 2] Brown Insurance Company LLC | rating 5 (65) | google.com
+  [LOCAL PACK abs 3] Grange Insurance Companies | rating 4.4 (1600) | google.com
+  [AI OVERVIEW abs 4] refs=[]
+  [PAA abs 5] ['Which company is best for life insurance?', 'What insurance company is based in Columbus, Ohio?', 'Who has the cheapest insurance in Ohio?', 'How much is life insurance in the USA?']
+  # 1 (abs 6) google.com | Find & Compare Insurance Professionals in Columbus
+  # 2 (abs 7) google.com | Metlife Financial Services
+  # 3 (abs 8) google.com | Life Care Plus | Columbus, OH
+  # 4 (abs 9) google.com | Leaver & Petitti Insurance Agency - Columbus
+  # 5 (abs 10) google.com | Metlife Financial Services
+  # 6 (abs 11) google.com | Bankers Life and Casualty
+  # 7 (abs 12) google.com | Globe Life American Income Division: Surace Smith & ...
+  # 8 (abs 13) google.com | Residents of Columbus Ohio Term Life Insurance
+  # 9 (abs 14) google.com | Globe Life American Income Division: Surace Smith & ...
+  #10 (abs 15) google.com | Great West Life
+  #11 (abs 16) google.com | Phelps Financial Services Inc | Local agents in Columbus ...
+  #12 (abs 17) google.com | Metlife Financial Services
+  #13 (abs 18) google.com | Top 23 Life Insurance Companies in Columbus
+  #14 (abs 19) google.com | Columbus Insurance Market
+  #15 (abs 20) google.com | Ohio Life Insurance (Cost & Coverage)
+  #16 (abs 21) google.com | Bankers Life and Casualty
+  #17 (abs 22) google.com | Bankers Life
+  #18 (abs 23) google.com | Integrated Financial Systems Agency Inc
+  >>> advocatelifegroup.com present: False []
+ERR {'code': 'provider_error', 'message': 'We couldn’t complete this request. Please try again later.', 'status': 502}
+
+=== fers retirement planning ohio | loc=Columbus,Ohio,United States | checked=2026-11-23 17:42:05 +00:00 | features=['ai_overview', 'organic', 'local_pack', 'video', 'people_also_ask']
+  # 1 (abs 1) google.com | Leaving opers pension in ohio: what to check before retiring
+  [LOCAL PACK abs 2] Federal Employee Benefit & Retirement Agency | rating 4.9 (897) | google.com
+  [LOCAL PACK abs 3] OPERS | rating 3.2 (146) | google.com
+  [LOCAL PACK abs 4] Peak Retirement Planning, Inc. | rating 5 (453) | google.com
+  [AI OVERVIEW abs 5] refs=[]
+  # 2 (abs 6) google.com | Cleveland, OH Retirement Planner
+  # 3 (abs 7) google.com | Federal Employees Retirement System: FERS Guide
+  # 4 (abs 8) google.com | Flat-fee, elder care planning financial advisors in Ohio
+  # 5 (abs 9) google.com | Ohio Retirement Age and SSA Guidelines for 2026
+  [video abs 10] 
+  [PAA abs 11] ['What states do not tax your federal pension?', 'How much does it cost to talk to a financial advisor about retirement?', 'Can I take Social Security at 62 and still work full time?', 'How do I calculate my FERS retirement benefits?']
+  # 6 (abs 12) google.com | Navigating Early Retirement with OPM's New VERA Authority
+  # 7 (abs 13) google.com | Sidney, OH | Flat-fee, general retirement planning financial ...
+  # 8 (abs 14) google.com | Mastering Federal Retirement Planning for FERS Employees
+  # 9 (abs 15) google.com | Federal Retirement Planning: TSP, FERS, and Social ...
+  #10 (abs 16) google.com | Flat-fee, elder care planning financial advisors in Ohio
+  #11 (abs 17) google.com | Our Guide to Retirement Planning for Federal Employees
+  #12 (abs 18) google.com | Building a foundation - PERSpective - OPERS
+  #13 (abs 19) google.com | Retirement | The Fedor Group | Cincinnati, OH
+  #14 (abs 20) google.com | Complete FERS Retirement Guide 2026 | Federal Pension ...
+  #15 (abs 21) google.com | Navigating FERS Retirement Planning in Dayton
+  #16 (abs 22) google.com | FERS & CSRS Eligibility: How to Know If It's Time to Go
+  #17 (abs 23) google.com | Seasoned, retirement income strategy financial advisors
+  #18 (abs 24) google.com | Retirement
+  >>> advocatelifegroup.com present: False []
+
+=== annuity advisor columbus ohio | loc=Columbus,Ohio,United States | checked=2026-11-23 17:42:02 +00:00 | features=['ai_overview', 'local_pack', 'organic', 'people_also_ask']
+  [LOCAL PACK abs 1] ANTOLINO Wealth Advisors | rating 5 (91) | google.com
+  [LOCAL PACK abs 2] Peak Retirement Planning, Inc. | rating 5 (453) | google.com
+  [LOCAL PACK abs 3] Johnson Investment Counsel | rating 5 (2) | google.com
+  [AI OVERVIEW abs 4] refs=[]
+  # 1 (abs 5) google.com | Best Investments in Columbus, OH
+  # 2 (abs 6) google.com | Endurance Financial Planning, 1335 Dublin Rd, #205-B ...
+  [PAA abs 7] ['Is $300,000 enough for a financial advisor?', 'What are the top 10 companies to work for in Columbus, Ohio?', 'What private equity firms are located in Columbus, Ohio?', 'How much does it cost to talk to a financial advisor about retirement?']
+  # 3 (abs 8) google.com | Best 30 Financial Planning Consultants in Northwest ...
+  # 4 (abs 9) google.com | Cuso Financial Services, LP
+  # 5 (abs 10) google.com | Great-West Life & Annuity
+  # 6 (abs 11) google.com | Top 30 Annuities in Bexley Park, Columbus, OH
+  # 7 (abs 12) google.com | Financial Pros in Columbus, OH - FinTechful
+  # 8 (abs 13) google.com | Commonwealth Financial Network
+  # 9 (abs 14) google.com | Stifel, Nicolaus & Company, Incorporated
+  #10 (abs 15) google.com | Endurance Financial Planning, 1335 Dublin Rd, #205-B ...
+  #11 (abs 16) google.com | Top 30 Annuities in Brittany Hills, Columbus, OH
+  #12 (abs 17) google.com | Ohio - Innovative Financial Group
+  #13 (abs 18) google.com | Commonwealth Financial Network
+  #14 (abs 19) google.com | Retirement planning professionals near Columbus, OH
+  #15 (abs 20) google.com | Fixed Annuity Rates | Get Quotes - Columbus Insurance Market
+  #16 (abs 21) google.com | TOP 10 BEST Fiduciary Services in Columbus, OH
+  #17 (abs 22) google.com | CFP®-certified financial advisors for retirees - Columbus, OH
+  #18 (abs 23) google.com | Fiduciary Financial Advisors in the Columbus Area
+  >>> advocatelifegroup.com present: False []
+
+=== advocate life group | loc=Columbus,Ohio,United States | checked=2026-11-23 17:42:02 +00:00 | features=['ai_overview', 'organic', 'people_also_ask']
+  [AI OVERVIEW abs 1] refs=[]
+  # 1 (abs 2) google.com | Annuities Can Support Retirement Income ...
+  # 2 (abs 3) google.com | Allow us to help. At no expense to you or your hard earn ...
+  # 3 (abs 4) google.com | Annuities Offer Retirement Income and Protection
+  # 4 (abs 5) google.com | Life insurance can help protect your family financially if you' ...
+  # 5 (abs 6) google.com | Life Insurance Affordability Gains Attention
+  # 6 (abs 7) google.com | Annuities Offer Retirement Income and Protection
+  # 7 (abs 8) google.com | Annuities Offer Retirement Income and Protection
+  # 8 (abs 9) google.com | Life Insurance Affordability Gains Attention
+  [PAA abs 10] ['What are some good retirement advice for 60-year-olds?']
+  # 9 (abs 11) google.com | 💼 Your 401(k) is part of the plan. Is protection part of it, ...
+  #10 (abs 12) google.com | Secure Your Future and Retire Tax-Free with Life ...
+  #11 (abs 13) google.com | Estate Planning Matters Without Children #InsuranceAgent ...
+  #12 (abs 14) google.com | Don't just plan to live longer. Plan to live better! Protect ...
+  #13 (abs 15) google.com | They never taught us this about life insurance… Most people ...
+  #14 (abs 16) google.com | Life insurance isn't just about the unexpected, it can also be ...
+  #15 (abs 17) google.com | FINANCIAL PLANNING for OLD AGE To talk about ...
+  #16 (abs 18) google.com | $900k Retirement: 4% Rule vs FIA Income for Life With No ...
+  #17 (abs 19) google.com | WHAT IF YOUR LIFE INSURANCE COULD DO MORE ...
+  #18 (abs 20) google.com | #8infinitygroup #retirementplanning #financialfreedom # ...
+  #19 (abs 21) google.com | Life Insurance for Retirees Without Dependents
+  >>> advocatelifegroup.com present: False []
+ERR {'code': 'provider_error', 'message': 'We couldn’t complete this request. Please try again later.', 'status': 502}
+
+=== term vs whole life insurance | loc=Columbus,Ohio,United States | checked=2026-11-23 17:42:03 +00:00 | features=['ai_overview', 'organic', 'people_also_ask', 'images']
+  [AI OVERVIEW abs 1] refs=['www.fidelity.com', 'www.guardianlife.com', 'www.nerdwallet.com', 'google.com', 'www.protective.com', 'google.com', 'www.trustage.com', 'google.com', 'www.youtube.com']
+  # 1 (abs 2) google.com | Whole vs. Term Life Insurance: Which Is the Right Choice ...
+  [PAA abs 3] ['Can you convert term to whole life?', 'What is the disadvantage of whole life insurance?', 'Does Dave Ramsey recommend whole or term life insurance?', 'What is better, life or term insurance?']
+  # 2 (abs 4) google.com | Term Life Insurance vs Whole Life Insurance
+  # 3 (abs 5) google.com | Term Life Vs. Whole Life Insurance Which is Best for You
+  # 4 (abs 6) google.com | Term Life vs Whole Life Insurance: Which One is Better for You?
+  # 5 (abs 7) google.com | Life Insurance Term VS Whole Life What is the difference ...
+  # 6 (abs 8) google.com | What's the Difference Between Term and Whole Life Insurance?
+  # 7 (abs 9) google.com | Term vs. Whole Life Insurance: Pros and Cons
+  # 8 (abs 10) google.com | Expert Comparison: Whole Life Insurance vs Term Life ...
+  # 9 (abs 11) google.com | The Differences Between Term and Whole Life Insurance
+  #10 (abs 12) google.com | Whole Life Insurance vs. Term Life Insurance
+  #11 (abs 13) google.com | Difference Between Term and Whole Life Insurance
+  #12 (abs 14) google.com | Whole vs. Term Life Insurance: Which Is the Right Choice ...
+  #13 (abs 15) google.com | Comparing Term Life vs. Whole Life Insurance
+  #14 (abs 16) google.com | Whole vs. Term Life Insurance: How To Decide What's Right ...
+  #15 (abs 17) google.com | Term vs. Whole Life: Which Insurance Option is Best for You?
+  #16 (abs 18) google.com | Term vs. Whole Life: Which Insurance Suits You?
+  [images abs 19] Images
+  #17 (abs 20) google.com | Term Life vs. Whole Life Insurance Explained
+  #18 (abs 21) google.com | Term vs. Whole Life Insurance: Understanding the ...
+  >>> advocatelifegroup.com present: False []
