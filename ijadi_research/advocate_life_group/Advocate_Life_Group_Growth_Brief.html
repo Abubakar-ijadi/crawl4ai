@@ -162,6 +162,31 @@ h3{font-size:10.5pt;font-weight:700;margin:0}
 .worth p{font-size:8.8pt;color:#d6dfe0}
 .worth .fine{font-size:7.9pt;color:#a9b8ba;margin-top:7px;padding-top:7px;border-top:1px solid rgba(255,255,255,.18);line-height:1.4}
 
+.duo{display:grid;grid-template-columns:1fr 1fr;gap:.24in;margin-top:.18in}
+.note{border:1px solid var(--line);border-radius:10px;padding:11px 14px}
+.note h3{font-family:var(--serif);font-weight:400;font-size:13pt;margin:0 0 5px}
+.note p{font-size:8.9pt;color:var(--ink-2)}
+.note p + p{margin-top:5px}
+.note .stat{font-family:var(--serif);font-size:20pt;color:var(--harbor);line-height:1;margin:2px 0 4px}
+.cols3{display:grid;grid-template-columns:repeat(3,1fr);gap:.2in;margin-top:10px}
+.col h3{font-size:10pt;padding-bottom:5px;border-bottom:2px solid var(--ink);margin-bottom:4px}
+.col ul{list-style:none;margin:0;padding:0}
+.col li{padding:5px 0 5px 18px;border-bottom:1px solid var(--line);font-size:8.9pt;color:var(--ink-2);position:relative}
+.col li:last-child{border-bottom:0}
+.col.need li:before{content:"";position:absolute;left:1px;top:9px;width:8px;height:8px;border-radius:50%;background:var(--brass)}
+.col.no li:before{content:"";position:absolute;left:2px;top:11px;width:9px;height:1.6px;background:var(--bad)}
+.col.yes li:before{content:"";position:absolute;left:3px;top:7px;width:5px;height:8px;border:solid var(--good);border-width:0 1.6px 1.6px 0;transform:rotate(45deg)}
+.gloss{width:100%;border-collapse:collapse;margin-top:6px;font-size:8.9pt}
+.gloss td{padding:5px 10px 5px 0;border-bottom:1px solid var(--line);vertical-align:top;color:var(--ink-2)}
+.gloss td:first-child{font-weight:700;color:var(--ink);white-space:nowrap;width:1.55in}
+.gloss tr:last-child td{border-bottom:0}
+.cta{margin-top:.2in;background:var(--ink);color:#fff;border-radius:12px;padding:16px 20px;display:grid;grid-template-columns:1.4fr 1fr;gap:.26in;align-items:center}
+.cta .kicker{color:#e3c98a}
+.cta h2{color:#fff;font-size:18pt}
+.cta p{font-size:9.3pt;color:#d6dfe0;margin-top:6px}
+.cta ol{margin:0;padding-left:18px;font-size:9pt;color:#e8eeee}
+.cta li{padding:3px 0}
+.cta li b{color:#fff}
 @media print{
   body{background:#fff}
   .sheet{margin:0;box-shadow:none;height:11in;min-height:0;page-break-after:always}
@@ -170,7 +195,7 @@ h3{font-size:10.5pt;font-weight:700;margin:0}
 @media screen and (max-width:860px){
   .sheet{width:auto;min-height:0;margin:12px}
   .pad,.run,.foot,.hero{padding-left:20px;padding-right:20px}
-  .gap,.where,.market,.bottom,.assets,.promise,.pilot ul{grid-template-columns:1fr;gap:14px}
+  .gap,.where,.market,.bottom,.assets,.promise,.pilot ul,.duo,.cols3,.cta{grid-template-columns:1fr;gap:14px}
   .vs{padding:2px 0}
   .reasons,.steps,.checks{grid-template-columns:1fr}
   .reason + .reason{padding-left:0;border-left:0;border-top:1px solid var(--line)}
@@ -189,7 +214,7 @@ h3{font-size:10.5pt;font-weight:700;margin:0}
    <svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="8" fill="#b28a3c"/><path d="M4.5 8h6M8 5l3 3-3 3" fill="none" stroke="#fff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
    <span><b>Our recommendation:</b> in the next 14 days, fix how you answer the leads you already get and clean up the website. Then build visibility around retirement income for veterans and federal employees, where the businesses at the top of Google are small.</span>
   </div>
-  <p class="for">Prepared for Athan Poullas, Advocate Life Group, central Ohio</p>
+  <p class="for">Prepared for Athan Poullas, Advocate Life Group · Confidential</p>
  </header>
 
  <div class="pad">
@@ -238,25 +263,25 @@ h3{font-size:10.5pt;font-weight:700;margin:0}
     </div>
     <div>
      <table class="matrix" aria-label="Google Maps visibility for 25 searches">
-      <tr><th></th><th>Life insurance<br>agent</th><th>Retirement<br>planner</th><th>Annuity<br>advisor</th><th>IUL<br>agent</th><th>Federal<br>retirement</th></tr>
+      <tr><th></th><th>Life insurance<br>agent</th><th>Retirement<br>planner</th><th>Annuity<br>advisor</th><th>IUL<br>agent*</th><th>Federal<br>retirement</th></tr>
       <tr><th class="row">Mount Vernon</th><td title="#1 Jobes Insurance, 157 reviews">–</td><td class="open" title="#1 Mount Vernon Financial, no reviews">–</td><td class="open" title="#1 Mount Vernon Financial, no reviews">–</td><td title="#1 Optimum Insurance, 51 reviews">–</td><td class="open" title="#1 Mount Vernon Financial, no reviews">–</td></tr>
       <tr><th class="row">Newark</th><td title="#1 Lewis A. Clark Insurance, 1,028 reviews">–</td><td class="open" title="#1 Retirement Specialists of Central Ohio, 17 reviews">–</td><td class="open" title="#1 Retirement Specialists of Central Ohio, 17 reviews">–</td><td title="#1 Lewis A. Clark Insurance, 1,028 reviews">–</td><td class="open" title="#1 Retirement Specialists of Central Ohio, 17 reviews">–</td></tr>
       <tr><th class="row">Delaware</th><td title="#1 Bolton Insurance, 228 reviews">–</td><td class="open" title="#1 Delaware Financial Planning, 14 reviews">–</td><td class="open" title="#1 Delaware Financial Planning, 14 reviews">–</td><td class="open" title="#1 The Sturgill Agency, 11 reviews">–</td><td class="open" title="#1 Delaware Financial Planning, 14 reviews">–</td></tr>
       <tr><th class="row">Westerville</th><td title="#1 The Life Insurance Empire, 42 reviews">–</td><td class="open" title="#1 Harding Financial Group, 35 reviews">–</td><td class="open" title="#1 Harding Financial Group, 35 reviews">–</td><td title="#1 The Life Insurance Empire, 42 reviews">–</td><td class="open" title="#1 Retirement Plans, Inc., 1 review">–</td></tr>
       <tr><th class="row">Columbus</th><td title="#1 Solid Insurance, 315 reviews">–</td><td title="#1 Peak Retirement Planning, 453 reviews">–</td><td class="open" title="#1 Frazier Financial Advisors, 31 reviews">–</td><td title="#1 Putnam White Lewis Insurance, 110 reviews">–</td><td title="#1 Peak Retirement Planning, 453 reviews">–</td></tr>
      </table>
-     <div class="legend"><span>– You are not listed (all 25)</span><span><i class="open"></i>Opening: #1 has 35 or fewer Google reviews</span></div>
+     <div class="legend"><span>– You are not listed (all 25)</span><span>*IUL: indexed universal life</span><span><i class="open"></i>Opening: #1 has 35 or fewer Google reviews</span></div>
     </div>
    </div>
   </div>
  </div>
 
- <div class="foot"><div>This brief is our professional read of a full audit of your website, Google presence, reviews, license record, ad booking page and competitors, run on 23 November 2026. A separate evidence appendix lists the source and date behind every point. Page 1 of 4.</div></div>
+ <div class="foot"><div>This brief summarises our review of your website, Google presence, reviews, license record, ad booking page and local competitors, completed on 23 November 2026. We can show you the evidence behind any point. Page 1 of 5.</div></div>
 </section>
 
 <!-- ================= PAGE 2 ================= -->
 <section class="sheet">
- <div class="run"><span class="brand"><i></i>Ijadi</span><span>What we found, page 2 of 4</span></div>
+ <div class="run"><span class="brand"><i></i>Ijadi</span><span>What we found, page 2 of 5</span></div>
  <div class="pad">
 
   <div class="finding" style="margin-top:.16in">
@@ -274,7 +299,7 @@ h3{font-size:10.5pt;font-weight:700;margin:0}
    <div class="fhead"><span class="tag">Finding 2</span><h2>Leads and trust are slipping away</h2></div>
    <div class="issues">
     <div class="issue"><div class="ic no"><svg width="9" height="9" viewBox="0 0 9 9"><path d="M2 2l5 5M7 2L2 7" fill="none" stroke="#b4412f" stroke-width="1.6" stroke-linecap="round"/></svg></div><div><b>Your booking calendar was full</b><span>The page your Facebook ads send people to said "No slot available this month" when we checked on 23 November.</span></div><span class="chip quick">Quick fix</span></div>
-    <div class="issue"><div class="ic no"><svg width="9" height="9" viewBox="0 0 9 9"><path d="M2 2l5 5M7 2L2 7" fill="none" stroke="#b4412f" stroke-width="1.6" stroke-linecap="round"/></svg></div><div><b>The text-message consent names another company</b><span>It says people agree to texts from "ALR Remodeling", with a California help number, and the page says "your home qualifies". It was copied from a template.</span></div><span class="chip quick">Quick fix</span></div>
+    <div class="issue"><div class="ic no"><svg width="9" height="9" viewBox="0 0 9 9"><path d="M2 2l5 5M7 2L2 7" fill="none" stroke="#b4412f" stroke-width="1.6" stroke-linecap="round"/></svg></div><div><b>The text-message consent names another company</b><span>It says people agree to texts from "ALR Remodeling", with a California help number, and the page says "your home qualifies". The page appears to have been copied from another business's template.</span></div><span class="chip quick">Quick fix</span></div>
     <div class="issue"><div class="ic no"><svg width="9" height="9" viewBox="0 0 9 9"><path d="M2 2l5 5M7 2L2 7" fill="none" stroke="#b4412f" stroke-width="1.6" stroke-linecap="round"/></svg></div><div><b>"Contact Us" leads nowhere useful</b><span>The button opens a Salesforce login page. The map on the contact section shows an error.</span></div><span class="chip quick">Quick fix</span></div>
     <div class="issue"><div class="ic no"><svg width="9" height="9" viewBox="0 0 9 9"><path d="M2 2l5 5M7 2L2 7" fill="none" stroke="#b4412f" stroke-width="1.6" stroke-linecap="round"/></svg></div><div><b>Template leftovers in the website code</b><span>Four hidden team bios are "Lorem ipsum" placeholder text, and one calls you "Co-Founder". Visitors don't see them, but Google and AI tools read them. The privacy policy also gives another firm's email.</span></div><span class="chip quick">Quick fix</span></div>
     <div class="issue"><div class="ic no"><svg width="9" height="9" viewBox="0 0 9 9"><path d="M2 2l5 5M7 2L2 7" fill="none" stroke="#b4412f" stroke-width="1.6" stroke-linecap="round"/></svg></div><div><b>Forms turn away life-insurance buyers</b><span>Every form asks for "net investable assets" starting at $100,000, which rules out most term and mortgage-protection buyers.</span></div><span class="chip quick">Quick fix</span></div>
@@ -285,12 +310,12 @@ h3{font-size:10.5pt;font-weight:700;margin:0}
    <div class="means"><b>What it means</b><span>Most of this is settings and wording inside tools you already own. It is days of work, and it pays off before anything else.</span></div>
   </div>
  </div>
- <div class="foot"><div>Checked on 23 November 2026 from public pages only. We did not submit a form or call, so how fast replies arrive today is not yet measured. Page 2 of 4.</div></div>
+ <div class="foot"><div>Everything here was checked on 23 November 2026 from public pages, the way a prospective client would see them. We did not submit a form or call, so today's reply speed is not yet measured. Page 2 of 5.</div></div>
 </section>
 
 <!-- ================= PAGE 3 ================= -->
 <section class="sheet">
- <div class="run"><span class="brand"><i></i>Ijadi</span><span>Your market, page 3 of 4</span></div>
+ <div class="run"><span class="brand"><i></i>Ijadi</span><span>Your market, page 3 of 5</span></div>
  <div class="pad">
   <div class="finding" style="margin-top:.16in">
    <div class="fhead"><span class="tag">Finding 3</span><h2>The retirement niche can be won, one audience at a time</h2></div>
@@ -321,7 +346,7 @@ h3{font-size:10.5pt;font-weight:700;margin:0}
    </div>
    <div class="constraint">
     <svg width="18" height="18" viewBox="0 0 18 18" aria-hidden="true"><path d="M9 1.5l8 14.5H1z" fill="#b28a3c"/><path d="M9 7v4.2" stroke="#fff" stroke-width="1.7" stroke-linecap="round"/><circle cx="9" cy="13.4" r="1" fill="#fff"/></svg>
-    <div><b>One thing to settle first</b>Ohio Department of Insurance records show your active Ohio license as non-resident since 10 August 2026, with Virginia as your home state, while the website says Mount Vernon. Google only lists businesses at a real, verifiable address. Some firms list without showing an address: the federal-retirement firm FEBRA does this and has 897 reviews. Until this is settled, the roadmap leans on what doesn't depend on an address: answers on your website, reviews and referrals.</div>
+    <div><b>One thing to confirm together</b>Your Ohio license record lists Virginia as your home state (non-resident Ohio license since 10 August 2026), while the website shows Mount Vernon. That is workable, but it decides how Google can list you: Google needs an address it can verify, though it can stay hidden (FEBRA lists this way and has 897 reviews). Until we confirm, the plan leans on website answers, reviews and referrals.</div>
    </div>
   </div>
 
@@ -331,35 +356,31 @@ h3{font-size:10.5pt;font-weight:700;margin:0}
     <li><b>Answer every lead within a minute</b><span>A compliant text and email in your business's name, and an automatic text back when you miss a call.</span></li>
     <li><b>Keep the calendar open</b><span>At least 10 bookable times a week, with reminders the day before and two hours before.</span></li>
     <li><b>Follow up with people who don't book</b><span>Six short, polite touches over ten days, then stop.</span></li>
-    <li><b>How we judge it</b><span>Nine in ten leads contacted within 5 minutes during business hours, and more of them reached and showing up than in week one. If not, we switch it off and you keep the setup.</span></li>
+    <li><b>How we judge it</b><span>Nine in ten leads contacted within 5 minutes in business hours, and more reached and showing up than in week one. If not, we switch it off and you keep the setup.</span></li>
    </ul>
   </div>
 
-  <div class="promise">
-   <div class="no">
-    <h3>What we will not promise</h3>
-    <ul>
-     <li>A Google ranking, a "#1", or a set number of leads or policies</li>
-     <li>That ChatGPT or other AI assistants will name you. We can make you easier to cite, not guarantee it</li>
-     <li>Fake reviews, reviews asked only of happy clients, or bought contact lists</li>
-    </ul>
+  <div class="duo">
+   <div class="note">
+    <p class="kicker">What AI assistants see today</p>
+    <h3>Little they can point to</h3>
+    <p>Google showed an AI summary above every search we ran. For local questions it draws on Yelp, BBB and insurers' "find an agent" pages. You are on none of them.</p>
+    <p>Asked about you, an assistant would likely read Trustpilot (helpful) and your website code (placeholder bios, a Massachusetts number). We test ChatGPT and others in month one.</p>
    </div>
-   <div class="yes">
-    <h3>What you'll get every month</h3>
-    <ul>
-     <li>One page: leads by source, reply time, appointments, shows and reviews</li>
-     <li>What we did, what's next, and a clear keep-or-stop call. No long contract</li>
-     <li>You own every account, login, page and phone number, and keep them if you leave</li>
-    </ul>
+   <div class="note">
+    <p class="kicker">Why answering fast matters</p>
+    <div class="stat">About 7×</div>
+    <p>In a Harvard Business Review study of 2,000+ US companies, firms replying to online inquiries within an hour were about seven times as likely to qualify the lead.</p>
+    <p>It covered many industries, not just insurance, so we treat it as a direction, not a promise.</p>
    </div>
   </div>
  </div>
- <div class="foot"><div>Google Maps results were captured on 23 November 2026, signed out, from a data-centre location, and parsed with open-source tools. Positions can differ for someone searching nearby. Search volumes are Google Ads averages for Ohio and are estimates. Page 3 of 4.</div></div>
+ <div class="foot"><div>Google Maps results were captured on 23 November 2026 while signed out, from outside your area, so positions can look different for someone searching nearby. Search counts are Google's monthly averages for Ohio and are estimates. Page 3 of 5.</div></div>
 </section>
 
 <!-- ================= PAGE 4 ================= -->
 <section class="sheet">
- <div class="run"><span class="brand"><i></i>Ijadi</span><span>The roadmap, page 4 of 4</span></div>
+ <div class="run"><span class="brand"><i></i>Ijadi</span><span>The roadmap, page 4 of 5</span></div>
  <div class="pad">
   <div style="margin-top:.16in">
    <p class="kicker">How to get there</p>
@@ -400,7 +421,7 @@ h3{font-size:10.5pt;font-weight:700;margin:0}
    <div class="head"><h2 style="font-size:14.5pt">Start here: the first 14 days</h2><span class="small muted">Nine items, mostly inside your website and booking tool</span></div>
    <ul class="checks">
     <li>Open at least 10 bookable times a week and add reminders</li>
-    <li>Rewrite the text consent in your business name and register it for business texting</li>
+    <li>Rewrite the text consent in your business name and register it with the phone carriers</li>
     <li>Point "Contact Us" to a working form and fix the map</li>
     <li>Delete the four placeholder bios and write one real bio with your license number</li>
     <li>Fix the privacy email, the "(insert link)" placeholder and the typos</li>
@@ -432,6 +453,76 @@ h3{font-size:10.5pt;font-weight:700;margin:0}
    </div>
   </div>
  </div>
- <div class="foot"><div><b>How we did this.</b> Website crawl (crawl4ai), Trustpilot, Ohio license record, BrokerCheck, ad booking page, 25 Google Maps searches, 10 Google searches, Ohio keyword volumes and a dozen competitors. Not checked: AI assistant answers, site speed, backlinks. As of 23 November 2026.</div></div>
+ <div class="foot"><div><b>How we did this.</b> We reviewed every page of your website, your Trustpilot reviews, your public license record, your ad booking page and social profiles, ran 25 Google Maps searches and 10 Google searches, and compared more than a dozen local competitors. Not yet checked: AI assistant answers, site speed and links from other sites. As of 23 November 2026. Page 4 of 5.</div></div>
+</section>
+<!-- ================= PAGE 5 ================= -->
+<section class="sheet">
+ <div class="run"><span class="brand"><i></i>Ijadi</span><span>Working together, page 5 of 5</span></div>
+ <div class="pad">
+  <div style="margin-top:.16in">
+   <p class="kicker">How we would work</p>
+   <h2>Clear roles, monthly proof, no lock-in</h2>
+   <div class="cols3">
+    <div class="col need">
+     <h3>What we need from you</h3>
+     <ul>
+      <li>Two 45-minute calls in the first two weeks</li>
+      <li>Access to your website, booking tool, domain and Google accounts</li>
+      <li>Your agent list with license numbers, and the address you can use</li>
+      <li>Rough lead numbers for the last three months</li>
+      <li>Your compliance contact, for a yes or no on wording</li>
+      <li>About 30 minutes a week to approve new pages</li>
+     </ul>
+    </div>
+    <div class="col yes">
+     <h3>What you'll get every month</h3>
+     <ul>
+      <li>A one-page report: leads by source, reply time, appointments, shows and reviews</li>
+      <li>The same questions asked of AI assistants each month, with their answers</li>
+      <li>What we did, what's next, and a clear keep-or-stop call</li>
+      <li>Month-to-month terms, with no long contract</li>
+      <li>Every account, login, page and phone number stays yours</li>
+     </ul>
+    </div>
+    <div class="col no">
+     <h3>What we will not promise</h3>
+     <ul>
+      <li>A Google ranking or a "#1" position</li>
+      <li>A set number of leads, appointments or policies</li>
+      <li>That ChatGPT or other assistants will name you. We can make you easier to cite</li>
+      <li>Fake reviews, or reviews asked only of happy clients</li>
+      <li>Claims your license and insurance companies don't support</li>
+     </ul>
+    </div>
+   </div>
+  </div>
+
+  <div class="sec">
+   <p class="kicker">Plain-English glossary</p>
+   <h2 style="font-size:14.5pt">Terms used in this brief</h2>
+   <table class="gloss">
+    <tr><td>Google Business Profile</td><td>Your free listing on Google Maps and in local search results: name, address or service area, hours, phone, photos and reviews.</td></tr>
+    <tr><td>IUL</td><td>Indexed universal life: permanent life insurance whose cash value is credited based on a market index, within set limits.</td></tr>
+    <tr><td>FERS</td><td>The Federal Employees Retirement System, the pension and savings plan for most US federal workers.</td></tr>
+    <tr><td>Text consent</td><td>The wording a person agrees to before you text them. For automated marketing texts, federal rules call for written consent to hear from your business, and phone carriers require business texting to be registered.</td></tr>
+    <tr><td>Tracking</td><td>Free tools such as Google Analytics that show which ad, search or referral each lead came from.</td></tr>
+    <tr><td>AI assistants</td><td>Tools like ChatGPT, Gemini, Perplexity and Google's AI summaries, which more people now ask for recommendations.</td></tr>
+   </table>
+  </div>
+
+  <div class="cta">
+   <div>
+    <p class="kicker">Your next step</p>
+    <h2>A 30-minute call to confirm the facts</h2>
+    <p>If this matches what you see in your business, we would start with one short call. We confirm your agent list, home base and lead numbers, then begin the 14-day plan with the lead trial.</p>
+   </div>
+   <ol>
+    <li><b>Week 1:</b> confirm facts, get access, open the calendar</li>
+    <li><b>Week 2:</b> lead trial live, website fixes done</li>
+    <li><b>Week 4:</b> first monthly report and a keep-or-stop call</li>
+   </ol>
+  </div>
+ </div>
+ <div class="foot"><div>Compliance note: this brief is not legal advice. Ohio rules require life-insurance marketing to say clearly that it is life insurance, and federal rules require written consent before automated texts or calls. Your insurance companies and compliance contact have the final say on wording. Page 5 of 5.</div></div>
 </section>
 </body></html>
