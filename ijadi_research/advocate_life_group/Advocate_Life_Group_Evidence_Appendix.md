@@ -328,3 +328,41 @@ Finding: **FEBRA**, the federal-retirement specialist ranking #5 for the Columbu
 - Advocate Life Group: TrustScore 4.4, 10 reviews, claimed: True, categories: Life Insurance Agency, Non-Bank Financial Service.
 - Every review is 5★ and labelled "Organic" (unprompted). Publish dates: 2026-08-12, 2026-07-23, 2026-07-16, 2026-06-19, 2026-06-18, 2026-04-16, 2026-04-10, 2026-01-13, 2025-12-31, 2025-12-31.
 - Owner replies: 3 of 10 (all dated 2026-01-13). **No new review since 2026-08-12** (about 3.5 months). Verified.
+
+---
+
+## 12. 25-search Google Maps grid and review themes (23 Nov 2026, ~18:30 UTC)
+
+**Method:** 5 services × 5 areas. Public Google Maps search pages were fetched by Firecrawl (rawHtml, US, `waitFor` 5 s, map centred on each town at zoom 12) and parsed with open-source `evidence/oss_gbp_extract.py` (crawl4ai `JsonCssExtractionStrategy`). Output: `evidence/oss_grid_25.json`; raw HTML in `raw/grid/` (git-ignored). Signed-out data-centre capture, so positions can differ for local searchers. Verified.
+
+**Result:** Advocate Life Group appears in **0 of 25** searches. "Opening" = the #1 listing has ≤35 Google reviews: **14 of 25** cells, including **13 of 15** retirement-planner, annuity-advisor and federal-retirement searches.
+
+| Area | Service | Listings | #1 listing (rating, reviews) | Opening? |
+|---|---|---|---|---|
+| Mount Vernon | life insurance agent | 34 | Jobes Insurance Agency (4.9, 157) | No |
+| Mount Vernon | retirement planner | 25 | Mount Vernon Financial (–, 0) | Yes |
+| Mount Vernon | annuity advisor | 22 | Mount Vernon Financial (–, 0) | Yes |
+| Mount Vernon | IUL insurance agent | 21 | Optimum Insurance LLC (5.0, 51) | No |
+| Mount Vernon | federal retirement planning | 13 | Mount Vernon Financial (–, 0) | Yes |
+| Newark | life insurance agent | 40 | Lewis A. Clark Insurance Agency LLC (5.0, 1028) | No |
+| Newark | retirement planner | 15 | Retirement Specialists of Central Ohio (4.8, 17) | Yes |
+| Newark | annuity advisor | 33 | Retirement Specialists of Central Ohio (4.8, 17) | Yes |
+| Newark | IUL insurance agent | 20 | Lewis A. Clark Insurance Agency LLC (5.0, 1028) | No |
+| Newark | federal retirement planning | 9 | Retirement Specialists of Central Ohio (4.8, 17) | Yes |
+| Delaware | life insurance agent | 40 | Bolton Insurance Agency (5.0, 228) | No |
+| Delaware | retirement planner | 22 | Delaware Financial Planning (5.0, 14) | Yes |
+| Delaware | annuity advisor | 39 | Delaware Financial Planning (5.0, 14) | Yes |
+| Delaware | IUL insurance agent | 39 | The Sturgill Agency (4.6, 11) | Yes |
+| Delaware | federal retirement planning | 24 | Delaware Financial Planning (5.0, 14) | Yes |
+| Westerville | life insurance agent | 40 | The Life Insurance Empire (5.0, 42) | No |
+| Westerville | retirement planner | 33 | Harding Financial Group (5.0, 35) | Yes |
+| Westerville | annuity advisor | 40 | Harding Financial Group (5.0, 35) | Yes |
+| Westerville | IUL insurance agent | 37 | The Life Insurance Empire (5.0, 42) | No |
+| Westerville | federal retirement planning | 22 | Retirement Plans, Inc. (5.0, 1) | Yes |
+| Columbus | life insurance agent | 60 | Solid Insurance (4.6, 315) | No |
+| Columbus | retirement planner | 40 | Peak Retirement Planning, Inc. (5.0, 453) | No |
+| Columbus | annuity advisor | 40 | Frazier Financial Advisors, LLC (4.9, 31) | Yes |
+| Columbus | IUL insurance agent | 52 | Putnam White Lewis Insurance (4.9, 110) | No |
+| Columbus | federal retirement planning | 39 | Peak Retirement Planning, Inc. (5.0, 453) | No |
+
+**Trustpilot review themes** (keyword coding of all 10 reviews, `evidence/trustpilot_theme_counts.json`): names Athan: 6 of 10; patience / explains clearly: 5 of 10; responsive / follow-through: 4 of 10; cares, not in it for money: 3 of 10; switched from another firm: 4 of 10; IUL: 2 of 10; veterans: 1 of 10. Verified (counts are our coding).
