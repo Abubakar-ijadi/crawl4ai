@@ -19,7 +19,7 @@ Search results and AI answers are personalized and change over time. Every SERP 
 |---|---|---|
 | **crawl4ai** (local repo, v0.8.x, this branch) | ⚠️ **Partially blocked, then worked around.** This cloud container's network policy refused outbound connections to `advocatelifegroup.com` and all competitor domains (HTTP 403 from the egress proxy). | Firecrawl fetched each page's **raw HTML** (`formats: rawHtml`). crawl4ai then parsed that HTML locally through its `raw:` input (`AsyncWebCrawler.arun("raw:<html>")`) plus a BeautifulSoup audit layer. Script: `scratchpad/c4a_audit.py` (copied to `evidence/c4a_audit.py`). Outputs: `crawl/client_home.json`, `crawl/client_posts.json`, `crawl/competitors.json`. A side effect: crawl4ai did not run a link-following deep crawl, so the page inventory comes from the XML sitemap instead (§1.2). |
 | **Firecrawl** (MCP + Alexandria) | ✅ Used | Web search (localized), scraping, an agent job for the Ohio DOI license lookup, and Alexandria providers: `firecrawl-maps` (Google Maps listings, review trends), `dataforseo` (Google SERP + Google Ads keyword volume), `finra-org` (BrokerCheck), `bbb-org` (BBB search). |
-| **Apify** | ❌ **Not available.** The Composio Apify toolkit has **no connected account**. A connection link was generated (Composio account `apify_syne-pasan`, status "initiated") but never completed. | GBP/Maps data came from Alexandria `firecrawl-maps` (business search + `rating_trend` for review velocity and owner-response rate). SERP and People-Also-Ask data came from Alexandria `dataforseo/serp/google-organic`. Social profiles were checked through Firecrawl search. Facebook could not be scraped (Firecrawl: "site not supported"). |
+| **Apify** | ❌ **Not available.** (Re-run with open-source tools: see §11.) The Composio Apify toolkit has **no connected account**. A connection link was generated (Composio account `apify_syne-pasan`, status "initiated") but never completed. | GBP/Maps data came from Alexandria `firecrawl-maps` (business search + `rating_trend` for review velocity and owner-response rate). SERP and People-Also-Ask data came from Alexandria `dataforseo/serp/google-organic`. Social profiles were checked through Firecrawl search. Facebook could not be scraped (Firecrawl: "site not supported"). |
 | **Live AI assistants** (ChatGPT, Perplexity, Gemini, Copilot) | ❌ **Not tested.** No OpenAI, Perplexity or Gemini account is connected in Composio (checked 23 Nov 2026 17:44 UTC). | The GEO assessment uses proxies: (a) Google AI Overview presence and citations from DataForSEO SERPs, (b) the **retrieval set** a web-grounded assistant would draw on (Firecrawl search for the same prompts), and (c) presence on the directories those engines usually cite. Every GEO finding is therefore tagged **Inferred**. |
 | **Ohio Secretary of State** | ❌ Not retrieved | `businesssearch.ohiosos.gov` served a bot security check to the Firecrawl agent. The legal entity name, filing date and registered agent are **Not found**. |
 | **Mystery shop** | ⏸ Not run | Not approved by the user. All lead-handling findings are visual inspections of forms and funnels. No inquiry was submitted. |
@@ -284,3 +284,47 @@ Script: `evidence/opportunity_model.py`; output: `evidence/opportunity_model_out
 6. Actual lead volume, contact rate, show rate and commissions: need the owner's numbers (the model uses stated placeholders).
 7. Agent roster: only one producer verified. Need the names of any other agents to check ODI.
 8. Three SERP calls returned provider errors (§4.2) and were not re-run.
+
+---
+
+## 11. Open-source re-run of the GBP and review scraping (23 Nov 2026, 17:57–18:01 UTC)
+
+**Why:** Apify was not connected. This re-run replaces the hosted Maps provider with open-source scraping code.
+
+**How:**
+- **Fetch:** this container's egress policy blocks google.com, trustpilot.com and the other review sites (HTTP 403). The public pages were therefore fetched as rendered HTML by Firecrawl (`rawHtml`, `waitFor` 5–9 s, US location).
+- **Parse (open source):** [`evidence/oss_gbp_extract.py`](evidence/oss_gbp_extract.py) uses crawl4ai's `JsonCssExtractionStrategy` on `raw:` HTML for the Maps result cards, and BeautifulSoup for profile panels (rating, star histogram, address, phone, website, booking link, hours, owner updates, the top 3 visible reviews and owner replies). [`evidence/oss_trustpilot_extract.py`](evidence/oss_trustpilot_extract.py) parses Trustpilot's embedded `__NEXT_DATA__` JSON.
+- **Outputs:** `evidence/oss_gbp_search.json`, `evidence/oss_gbp_places.json`, `evidence/oss_trustpilot_reviews.json`. Raw HTML is in `raw/gbp/` (git-ignored).
+- **Not used:** an attempt to call Google's internal review-list endpoint (`listentitiesreviews`, used by some open-source review scrapers) was refused by this session's permission policy. Only public, user-facing pages were used.
+- **Limits:** without clicking and scrolling, a profile page shows only the 3 "most relevant" reviews. Full 12-month review velocity therefore still comes from the earlier `firecrawl-maps/rating_trend` pull (§3, §5). Running an open-source scraper such as `gosom/google-maps-scraper` locally, on a machine with open network access, would collect full review lists.
+
+### 11.1 Google Maps searches (rank = order in the Maps result list)
+| Search | Places | Advocate Life Group listed? | Top 5 |
+|---|---|---|---|
+| Advocate Life Group Mount Vernon OH | 14 | **No** | Mount Vernon Financial – (0); Giles Law Group 4.0 (51); Griffin Insurance 4.5 (71); Moore Law Firm 5.0 (22); Cooper, Adel, Vu & Associates, LPA - Centerburg 4.8 (243) |
+| Advocate Life Group | 17 | **No** | Loss of Life Advocates 5.0 (3); Kiki Aguero Advocacy Group Inc 5.0 (8); LegalEASE, A LEGAL ACCESS Company 4.8 (1642); Advocates Real Estate Group at KWSW - Bincy Jacob Realtor & Team 5.0 (106); The de la Garza Law Group 4.9 (221) |
+| life insurance agency Mount Vernon OH | 27 | **No** | Jobes Insurance Agency 4.9 (157); Griffin Insurance 4.5 (71); Kari Ball Insurance Agency 4.8 (57); Parker Agency LLC 5.0 (36); Optimum Insurance LLC 5.0 (51) |
+| retirement planning Mount Vernon OH | 15 | **No** | Mount Vernon Financial – (0); Spearman Financial Services LLC 5.0 (13); Mosaic Financial Group LLC 3.0 (2); Lambert Investment Group – (0); Edward Jones - Financial Advisor: Sara A Mankins, CEPA®|RICP® 5.0 (4) |
+| life insurance agency Columbus OH | 40 | **No** | Globe Life Liberty National Division: The Kafkis Agencies 4.8 (162); Auto and Home Insurance in Columbus Ohio \| Slyman Insurance Group Ohio 5.0 (437); Solid Insurance 4.6 (315); The Life Insurance Empire 5.0 (42); Globe Life American Income Division: Surace Smith & Partners Organization 4.9 (2017) |
+| FERS federal retirement planning Columbus OH | 14 | **No** | Peak Retirement Planning, Inc. 5.0 (453); OPERS 3.2 (146); Frazier Financial Advisors, LLC 4.9 (31); Retirement Plans, Inc. 5.0 (1); Federal Employee Benefit & Retirement Agency 4.9 (897) |
+| annuity advisor Columbus OH | 40 | **No** | Frazier Financial Advisors, LLC 4.9 (31); Libertas Wealth Management Group 5.0 (64); rebel Financial 5.0 (94); ANTOLINO Wealth Advisors 5.0 (91); Ross Wealth Advisors 4.6 (34) |
+
+Result: **no Google Business Profile for Advocate Life Group in any of the 7 searches**, including an exact-name search with no location (Verified, absence). Name collisions in that search: Advocate Insurance Group (WV), Advocate Financial, Advocate Investing Services (MD), Loss of Life Advocates.
+
+### 11.2 Competitor profiles (public place pages)
+| Profile | Category | Rating | Reviews (histogram total) | 1–3★ | Address shown | Booking link | Owner updates | Top-3 reviews with owner reply | Newest of top 3 |
+|---|---|---|---|---|---|---|---|---|---|
+| Dumbaugh Insurance | Insurance agency | 5.0 | 156 | 1 | 122 S Main St, Mt Vernon, OH 43050 | calendly.com | Yes | 2 of 3 | 6 months ago, 9 months ago, 8 months ago |
+| Federal Employee Benefit & Retirement Agency | Financial planner | 4.9 | 897 | 8 | **none (service-area)** | calendly.com | No | 0 of 3 | 5 months ago, 4 months ago, 5 months ago |
+| Madison Collins Stephens Agency | Insurance agency | 5.0 | 127 | 0 | 214 E Chestnut St, Mt Vernon, OH 43050 | – | No | 0 of 3 | a week ago, 4 months ago, 5 months ago |
+| Tim Workman - State Farm Insurance Agent | Insurance agency | 4.9 | 352 | 11 | 1590 Coshocton Ave Unit A, Mt Vernon, OH 43050 | timworkmanagency.com | Yes | 3 of 3 | a month ago, 3 weeks ago, 4 months ago |
+| Peak Retirement Planning, Inc. | Financial advisor | 5.0 | 453 | 3 | Bldg 501, 3600 Olentangy River Rd, Columbus, OH 43214 | – | No | 3 of 3 | a week ago, a week ago, 2 weeks ago |
+| DePolo & Associates, Inc.: Allstate Insurance | Insurance agency | 4.6 | 190 | 21 | 502 Coshocton Ave, Mt Vernon, OH 43050 | allstate.com | Yes | 1 of 3 | 3 weeks ago, 2 weeks ago, 2 months ago |
+| Western & Southern Life | Life insurance agency | 4.4 | 9 | 1 | 1650 Coshocton Ave A, Mt Vernon, OH 43050 | – | No | 2 of 3 | 6 years ago, 7 years ago, 9 years ago |
+
+Finding: **FEBRA**, the federal-retirement specialist ranking #5 for the Columbus FERS search, shows **no public address** (service-area listing), uses a Calendly booking link and runs phone appointments. It is a working model for a practice without an Ohio storefront. (Verified, observation; eligibility for the client still depends on a real verifiable address.)
+
+### 11.3 Client reviews: Trustpilot (open-source parse)
+- Advocate Life Group: TrustScore 4.4, 10 reviews, claimed: True, categories: Life Insurance Agency, Non-Bank Financial Service.
+- Every review is 5★ and labelled "Organic" (unprompted). Publish dates: 2026-08-12, 2026-07-23, 2026-07-16, 2026-06-19, 2026-06-18, 2026-04-16, 2026-04-10, 2026-01-13, 2025-12-31, 2025-12-31.
+- Owner replies: 3 of 10 (all dated 2026-01-13). **No new review since 2026-08-12** (about 3.5 months). Verified.
