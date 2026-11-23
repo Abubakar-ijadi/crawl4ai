@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Advocate Life Group Growth Brief</title>
+<style>
+  @page { size: Letter; margin: 0.42in 0.5in 0.42in 0.5in; }
+  :root { --ink:#16202c; --muted:#56616d; --line:#d8dee4; --navy:#14324a; --teal:#0d7672; --soft:#f2f5f7; --red:#b93a2e; --amber:#a8690c; --green:#1d7a45; --violet:#6448a8; --me:#eaf4f3; }
+  * { box-sizing: border-box; }
+  html, body { margin:0; padding:0; background:#fff; color:var(--ink); font-family:"Inter","Segoe UI","DejaVu Sans",sans-serif; font-size:8.7pt; line-height:1.34; }
+  .page { page-break-after: always; break-after: page; }
+  .page:last-child { page-break-after: auto; break-after: auto; }
+  header.bar { display:flex; justify-content:space-between; align-items:flex-end; border-bottom:2.5px solid var(--navy); padding-bottom:4px; margin-bottom:7px; }
+  header.bar .brand { font-weight:800; letter-spacing:.14em; color:var(--navy); font-size:9pt; }
+  header.bar .meta { color:var(--muted); font-size:7.4pt; text-align:right; }
+  h1 { font-size:15pt; margin:0 0 3px; color:var(--navy); letter-spacing:-.01em; }
+  h1 .num { color:var(--teal); font-weight:800; margin-right:5px; }
+  h2 { font-size:9.4pt; margin:8px 0 3px; color:var(--navy); text-transform:uppercase; letter-spacing:.06em; }
+  p { margin:0 0 4px; }
+  .lede { color:var(--muted); margin-bottom:6px; }
+  .defs { font-size:7.7pt; color:var(--muted); border-left:3px solid var(--teal); padding:2px 0 2px 7px; margin:4px 0 6px; }
+  .defs b { color:var(--ink); }
+  .exec { background:var(--soft); border-radius:6px; padding:6px 9px; margin:4px 0 6px; }
+  .exec ol { margin:0; padding-left:15px; } .exec li { margin:1.5px 0; font-size:8.9pt; }
+  table { width:100%; border-collapse:collapse; margin:2px 0 4px; font-variant-numeric: tabular-nums; }
+  th { text-align:left; font-size:7pt; text-transform:uppercase; letter-spacing:.04em; color:var(--muted); border-bottom:1.5px solid var(--navy); padding:3px 4px; vertical-align:bottom; }
+  td { border-bottom:1px solid var(--line); padding:3px 4px; vertical-align:top; font-size:8.1pt; }
+  td.s { white-space:nowrap; font-size:9.5pt; text-align:center; }
+  .tag { display:inline-block; font-size:6.7pt; font-weight:700; padding:0 4px; border-radius:3px; border:1px solid var(--line); color:var(--muted); white-space:nowrap; }
+  .v { color:var(--green); border-color:#b7dcc4; } .e { color:var(--amber); border-color:#ecd3a5; } .i { color:var(--violet); border-color:#d4c8ef; }
+  .sev { display:inline-block; font-size:6.6pt; font-weight:800; padding:0 4px; border-radius:3px; color:#fff; white-space:nowrap; }
+  .hi { background:var(--red); } .md { background:var(--amber); } .lo { background:#5f7d8f; }
+  .cols, .two { display:grid; grid-template-columns:1fr 1fr; gap:9px; }
+  .ws { display:grid; grid-template-columns:1fr 1fr 1fr; gap:7px; }
+  .card { border:1px solid var(--line); border-radius:6px; padding:5px 8px; }
+  .card h3 { margin:0 0 2px; font-size:8.6pt; color:var(--navy); }
+  .card ul { margin:0; padding-left:13px; } .card li { margin:1.5px 0; }
+  .card p { font-size:8pt; }
+  .good h3 { color:var(--green); } .bad h3 { color:var(--red); }
+  .callout { border:1.5px solid var(--amber); background:#fbf6ec; border-radius:6px; padding:5px 9px; margin-top:6px; }
+  .callout b.t { color:var(--amber); }
+  .small { font-size:7.3pt; color:var(--muted); }
+  .comp td { font-size:7.6pt; padding:2.5px 3px; } .comp th { font-size:6.7pt; padding:2.5px 3px; }
+  .comp tr.me td { background:var(--me); font-weight:600; }
+  .gaps td { font-size:7.45pt; padding:2.3px 3px; line-height:1.3; } .gaps th { font-size:6.7pt; padding:2.5px 3px; }
+  .gaps td:nth-child(2) { font-weight:600; }
+  .road td { font-size:7.6pt; padding:3px 3px; } .road th { font-size:6.7pt; }
+  .road td:first-child { font-weight:700; color:var(--navy); white-space:nowrap; }
+  .opp td, .opp th { text-align:center; } .opp td:first-child, .opp th:first-child { text-align:left; }
+  .first { border:2px solid var(--teal); border-radius:7px; padding:6px 9px; margin-top:6px; background:#f1f9f8; }
+  .first h2 { margin-top:0; color:var(--teal); }
+  .first ul { margin:0; padding-left:14px; } .first li { margin:1.5px 0; font-size:8.2pt; }
+  .pill { font-weight:700; color:var(--teal); }
+  footer { margin-top:6px; border-top:1px solid var(--line); padding-top:3px; font-size:6.9pt; color:var(--muted); }
+  @media screen {
+    body { background:#e9edf0; padding:20px max(16px, env(safe-area-inset-left, 0px)); font-size:14px; }
+    .page { background:#fff; max-width:8.5in; margin:0 auto 20px; padding:0.45in 0.5in; box-shadow:0 1px 4px rgba(20,50,74,.15); border-radius:4px; overflow-x:auto; }
+    td { font-size:12.5px; } .comp td, .gaps td, .road td { font-size:12px; } th { font-size:10.5px; }
+    .exec li { font-size:14px; } .small, footer { font-size:11.5px; }
+    @media (max-width: 760px) { .cols, .two, .ws { grid-template-columns:1fr; } .page { padding:20px 16px; } table.comp, table.gaps, table.road { min-width:720px; } }
+  }
+</style>
+</head>
+<body>
+
+<!-- ===================== PAGE 1 ===================== -->
+<section class="page">
+  <header class="bar">
+    <div class="brand">IJADI · GROWTH BRIEF</div>
+    <div class="meta">Advocate Life Group · prepared 23 Nov 2026 · confidential · page 1 of 4</div>
+  </header>
+  <h1><span class="num">1</span>Where you stand today</h1>
+  <p class="defs"><b>SEO</b> = showing up in Google's regular results and map listings. <b>AEO</b> = being the direct answer Google shows in snippets and "People also ask". <b>GEO</b> = being named and cited by AI assistants (ChatGPT, Perplexity, Gemini, Google AI Overviews, Copilot).</p>
+
+  <div class="exec"><ol>
+    <li><b>Your clients already vouch for you.</b> All 10 Trustpilot reviews are five-star and unprompted. They praise your patience, clear explanations and follow-through. Your blog publishes a careful, balanced article every two days.</li>
+    <li><b>People who don't already know your name can't find you.</b> You have no Google Business Profile and appear in none of the 10 non-brand searches we tested. AI assistants have little reliable information to cite.</li>
+    <li><b>The quickest gain is the leads you already get.</b> Your ad funnel's calendar showed no open slots this month, and its text-message consent names another company. We would fix that first and build visibility second.</li>
+  </ol></div>
+
+  <h2>Scorecard</h2>
+  <table>
+    <tr><th style="width:13%">Area</th><th style="width:6%">Status</th><th>Why (one line)</th><th style="width:12%">Confidence</th></tr>
+    <tr><td><b>SEO</b></td><td class="s">🔴</td><td>2 real pages plus 99 blog posts. No product or city pages, no structured data, no SEO plugin, 1.9&nbsp;MB homepage (1.3&nbsp;MB of it inline styling). You rank #1 for your own name and nowhere in the top 20 for non-brand searches.</td><td><span class="tag v">Verified</span></td></tr>
+    <tr><td><b>AEO</b></td><td class="s">🟡</td><td>Good ~1,400-word articles, but no author byline, no FAQ blocks, no markup. No snippets or "People also ask" answers cite you.</td><td><span class="tag v">Verified</span></td></tr>
+    <tr><td><b>GEO</b></td><td class="s">🔴</td><td>No llms.txt and no business data for AIs. Conflicting facts (Founder vs Co-Founder, Massachusetts phone, placeholder bios in the page code). Absent from the directories AIs cite.</td><td><span class="tag i">Inferred</span> <span class="small">live AIs not tested</span></td></tr>
+    <tr><td><b>Local</b></td><td class="s">🔴</td><td>No Google Business Profile in any of 7 Google Maps searches, and no BBB, Yelp or Yellow Pages listing. 27 agencies appear for "life insurance agency Mount Vernon OH".</td><td><span class="tag v">Verified</span></td></tr>
+    <tr><td><b>Reputation</b></td><td class="s">🟡</td><td>Trustpilot 4.4 from 10 five-star reviews, <b>none since 12 Aug 2026</b>. Zero Google reviews. Owner replied to 3, the last in Jan 2026.</td><td><span class="tag v">Verified</span></td></tr>
+    <tr><td><b>Lead handling</b></td><td class="s">🔴</td><td>"Contact Us" opens a Salesforce login. Forms require $100K+ in assets. The ad funnel showed "No slot available this month" and its text consent names "ALR Remodeling". No working analytics.</td><td><span class="tag v">Verified</span> <span class="small">visual; no live inquiry</span></td></tr>
+  </table>
+
+  <div class="cols" style="margin-top:6px">
+    <div class="card good"><h3>What you're already doing well</h3><ul>
+      <li><b>Real client advocacy.</b> Reviewers describe the same things: patience, quick follow-up, help fixing a badly structured IUL, help with veterans' benefits, and moving money out of a large firm.</li>
+      <li><b>A content engine that already runs.</b> 99 posts since Apr 2025, about 1,400 words each, in a balanced tone ("it can be, but only when…"). Few local competitors have material this good for answer engines.</li>
+      <li><b>A story others can't copy.</b> A USMC veteran founder with federal and private retirement experience, independent, with access to 25 carriers through Tax Free Wealth Plan.</li>
+    </ul></div>
+    <div class="card bad"><h3>The three gaps that matter most</h3><ul>
+      <li><b>Trust breakers.</b> "Contact Us" opens a Salesforce login, the map is broken, another firm's email sits in the privacy policy, and "(insert link)" appears in the Terms. Four team bios hidden in every page's code are Lorem ipsum placeholders, which Google and AI tools can read.</li>
+      <li><b>Invisible where locals and AIs look.</b> No Google, BBB, Yelp or Yellow Pages listing, and no structured data telling search engines who you are.</li>
+      <li><b>Leads leak after you pay for them.</b> No open slots, consent text in the wrong company's name, a form gate that screens out life buyers, and no way to see which source works.</li>
+    </ul></div>
+  </div>
+
+  <div class="callout"><b class="t">One fact to settle first.</b> Ohio Department of Insurance records (23 Nov 2026) show one licensed producer, Athanasios G. Poullas (NPN 18341865). His active Ohio license is <b>non-resident</b> (Life; Accident &amp; Health; issued 10 Aug 2026), with Virginia as resident state; the Ohio resident license was surrendered 30 Jul 2026. The website and Trustpilot present a Mount Vernon office. We could verify one agent of the 3–4 you mentioned. Where the business is based decides whether a Google profile is allowed (office listing, or a service-area listing with no public address) and what we can truthfully advertise. <span class="tag v">Verified</span></div>
+
+  <footer>Every figure has a source URL, tool, date and confidence tag in the separate Evidence Appendix. Searches were run 23 Nov 2026 (12:40–13:00 ET) from Mount Vernon and Columbus, OH. Search and AI results vary by person and over time.</footer>
+</section>
+
+<!-- ===================== PAGE 2 ===================== -->
+<section class="page">
+  <header class="bar">
+    <div class="brand">IJADI · GROWTH BRIEF</div>
+    <div class="meta">Advocate Life Group · page 2 of 4</div>
+  </header>
+  <h1><span class="num">2</span>How you show up against your market</h1>
+  <p class="lede">These are the businesses Google Maps listed for the life-insurance and retirement searches we ran in Mount Vernon and Columbus. We scraped every number from public pages with open-source tools.</p>
+
+  <table class="comp">
+    <tr><th style="width:20%">Business (type)</th><th>Google rating (reviews)</th><th>1–3★ reviews</th><th style="width:11%">Maps rank*</th><th>Booking link on Google</th><th>Owner replied (top 3)</th><th>Structured data on site</th><th style="width:19%">What they lead with</th></tr>
+    <tr class="me"><td>Advocate Life Group (independent)</td><td>No profile · Trustpilot 4.4 (10)</td><td>–</td><td>Not in any of 7</td><td>–</td><td>–</td><td>None</td><td>Veteran founder; retirement income, IUL</td></tr>
+    <tr><td>Madison Collins Stephens (local independent)</td><td>5.0 (127)</td><td>0</td><td>#6 of 27</td><td>None</td><td>0 of 3</td><td>Organization</td><td>Two offices; call or text</td></tr>
+    <tr><td>Dumbaugh Insurance (local independent)</td><td>5.0 (156)</td><td>1</td><td>#8 of 27</td><td>Calendly</td><td>2 of 3</td><td>InsuranceAgency</td><td>"Independent agent" page; book from Google</td></tr>
+    <tr><td>DePolo &amp; Associates (Allstate, captive)</td><td>4.6 (190)</td><td>21</td><td>#13 of 27</td><td>Allstate link</td><td>1 of 3</td><td>FAQPage, Service</td><td>Life &amp; retirement page for "Knox County families"</td></tr>
+    <tr><td>Tim Workman (State Farm, captive)</td><td>4.9 (352)</td><td>11</td><td>#11 of 27</td><td>Agency site</td><td>3 of 3</td><td>InsuranceAgency, Person</td><td>Volume; replies to reviews</td></tr>
+    <tr><td>Western &amp; Southern Life (captive, life)</td><td>4.4 (9)</td><td>1</td><td>#12 of 27</td><td>None</td><td>2 of 3</td><td>InsuranceAgency</td><td>Only life office in town; top review 6 yrs old</td></tr>
+    <tr><td>Peak Retirement Planning (Columbus planner)</td><td>5.0 (453)</td><td>3</td><td>#1 FERS · #6 annuity</td><td>None</td><td>3 of 3</td><td>LocalBusiness</td><td>Review engine; "Midwestern Millionaires"</td></tr>
+    <tr><td>FEBRA – Federal Employee Benefit &amp; Retirement Agency</td><td>4.9 (897)</td><td>8</td><td>#5 FERS</td><td>Calendly</td><td>0 of 3</td><td>not crawled</td><td>No public office; phone appointments</td></tr>
+  </table>
+  <p class="small">*Order in the Google Maps list for "life insurance agency Mount Vernon OH" (27 listed); Peak and FEBRA from the Columbus FERS and annuity searches. Sources: public Google Maps pages (7 searches, 7 profiles) and Trustpilot, 23 Nov 2026, parsed with open-source crawl4ai + BeautifulSoup. An earlier trend pull found local rivals adding 13–40 Google reviews a year, and Peak adding 60 in Oct–Nov. Ladder and AARP buy ads on "life insurance mount vernon ohio". <span class="tag v">Verified</span></p>
+
+  <h2>Who the AIs recommend today, and why</h2>
+  <p><b>We could not run live ChatGPT, Perplexity, Gemini or Copilot tests</b>, because no accounts were connected. That baseline is the first task in month one. Google showed an AI Overview on all 7 searches we captured. For product questions it cites national publishers (NerdWallet, Fidelity, Guardian). For local questions it cites Yelp, Yellow Pages, BBB and carrier "find an agent" pages. <b>You are on none of them</b>, so an assistant has nothing to point to. Asked "Is Advocate Life Group legit?", an assistant would read Trustpilot (helpful) and your site's code. That code holds placeholder bios, mismatched titles and a Massachusetts phone number, so the answer could be wrong or unflattering. <span class="tag i">Inferred</span></p>
+
+  <h2>Whitespace: positions you can credibly own</h2>
+  <div class="ws">
+    <div class="card"><h3>1 · Veterans' and federal employees' retirement income</h3>
+      <p>About <b>390 Ohio searches a month</b> for FERS retirement planning and <b>110</b> for veterans' life insurance. <b>15,300 federal employees</b> work in the Columbus metro (FRED, 2024). FEBRA (897 reviews) ranks with <b>no public office</b> on phone appointments, so a storefront isn't required. None of the competitors we saw is veteran-owned, and one of your reviewers already describes this work.</p>
+      <p class="small">Guardrail: no "fiduciary" language unless you hold an adviser registration (none found on BrokerCheck).</p></div>
+    <div class="card"><h3>2 · An independent second opinion on IUL and annuity policies</h3>
+      <p>About <b>650 Ohio searches a month</b> for IUL. The results are carriers, NerdWallet, and a page about an IUL lawsuit; no local agent offers a plain-English policy review. Two of your reviews describe exactly that: "my IUL was structured wrong…".</p>
+      <p class="small">Guardrail: position it as a review, not a replacement pitch. Ohio replacement rules apply.</p></div>
+    <div class="card"><h3>3 · Plain-English answers, signed by a licensed agent</h3>
+      <p>Your 99 articles go deeper than competitors' pages. Bylines, 40–60-word answers, FAQ blocks and question-style headings would make them eligible for snippets and AI citations. This works <b>statewide</b>, so it doesn't depend on an office address.</p>
+      <p class="small">Not worth chasing: "best agency in Mount Vernon". Rivals have 127–352 Google reviews and storefronts.</p></div>
+  </div>
+
+  <footer>Search volumes are Google Ads averages for Ohio, Nov 2025–Oct 2026 (DataForSEO), and are estimates. "1–3★" counts come from each profile's star histogram. Captive = sells one company's products; independent = can shop several carriers.</footer>
+</section>
+
+<!-- ===================== PAGE 3 ===================== -->
+<section class="page">
+  <header class="bar">
+    <div class="brand">IJADI · GROWTH BRIEF</div>
+    <div class="meta">Advocate Life Group · page 3 of 4</div>
+  </header>
+  <h1><span class="num">3</span>Gap-by-gap: what we found and what we'd do</h1>
+  <p class="lede">Each row is a gap we can show you on your own site or records. The timing assumes access is granted in week 1. "Impact" is our judgement of how much each gap costs you today; it is not a forecast.</p>
+
+  <table class="gaps">
+    <tr><th style="width:5%">Impact</th><th style="width:15%">Gap</th><th style="width:27%">What we found</th><th style="width:28%">What we'd do</th><th style="width:15%">What we need from you</th><th style="width:10%">When</th></tr>
+    <tr><td><span class="sev hi">High</span></td><td>Home base and roster unclear</td><td>One producer on ODI record. Active Ohio license is non-resident (VA resident); site and Trustpilot say Mount Vernon. 3–4 agents not verifiable.</td><td>Confirm roster and NPNs. Make the address, phone and "who we are" match the license record everywhere. Decide between an office listing, a service-area listing, or statewide-only.</td><td>Roster with NPNs; 30-min call</td><td>Week 1</td></tr>
+    <tr><td><span class="sev hi">High</span></td><td>Ad-funnel leads stall</td><td>Booking page: "No slot available this month". SMS consent names "ALR Remodeling" with a California help number. Copy says "your home qualifies".</td><td>Rewrite consent in your business name and register it for business texting (A2P 10DLC). Open ≥10 slots a week. Add 24-hour and 2-hour reminders, a 60-second first reply and missed-call text-back.</td><td>GoHighLevel admin; calendar hours</td><td>Weeks 1–2</td></tr>
+    <tr><td><span class="sev hi">High</span></td><td>Website contact path broken</td><td>"Contact Us" opens <i>simplicity.my.salesforce.com</i>. Google Map embed errors. No chat, no booking, no text option.</td><td>Point every contact button to a working form and a booking link. Fix or replace the map. Add click-to-text.</td><td>WordPress admin</td><td>Week 1</td></tr>
+    <tr><td><span class="sev hi">High</span></td><td>No measurement</td><td>Only a legacy Universal Analytics tag (UA-3329706-1, stopped collecting in 2023). No GA4, Tag Manager or call tracking.</td><td>Install GA4 and Search Console. Add call tracking and a lead-source field. Set up a one-page monthly dashboard.</td><td>Google account access</td><td>Weeks 1–2</td></tr>
+    <tr><td><span class="sev md">Med</span></td><td>Placeholder and wrong content</td><td>Four hidden team popups (IDs 21097–21100) with Lorem ipsum bios load on every page. Founder vs "Co-Founder"; "(insert link)" in Terms; opt-out email for another firm (llonebeacon.com); "Retriement" typo.</td><td>Delete or replace the popups. Write one real bio with license number and photo. Correct the Terms, privacy email and typos.</td><td>Bio facts; headshot</td><td>Week 1</td></tr>
+    <tr><td><span class="sev md">Med</span></td><td>Forms screen out life buyers</td><td>Every form requires "Net Investable Assets", starting at $100–250K. Mortgage-protection and term buyers can't fit.</td><td>Separate short forms for life/mortgage protection and for retirement income. Route each to the right next step.</td><td>Approve intake questions</td><td>Weeks 2–4</td></tr>
+    <tr><td><span class="sev md">Med</span></td><td>No Google profile or directory listings</td><td>Absent from Google Maps (7 searches), BBB, Yelp and Yellow Pages. "Advocate…" name collides with other firms.</td><td>If eligible: Google profile (office or service-area), then BBB, Yelp and Yellow Pages with identical name, address and phone. If not: a statewide content and referral focus.</td><td>Verification steps (postcard/video)</td><td>Days 15–60</td></tr>
+    <tr><td><span class="sev md">Med</span></td><td>Search engines can't read the site</td><td>No structured data, no SEO plugin, no llms.txt (404). 4 H1s, 29 of 40 images without alt text. Services exist only as homepage anchors.</td><td>Add agency, person and FAQ structured data, an SEO plugin and an llms.txt. Fix headings and alt text, slim the CSS. Add one page per core service.</td><td>None beyond access</td><td>Days 15–45</td></tr>
+    <tr><td><span class="sev md">Med</span></td><td>Content not built to be quoted</td><td>99 strong posts but no byline, no FAQ blocks, no question headings, and nothing on FERS, veterans or IUL review.</td><td>Add a licensed-agent byline. Open each top post with a 40–60-word answer. Publish 6–8 question-led pages for the whitespace topics.</td><td>30 min a week for review and sign-off</td><td>Days 31–90</td></tr>
+    <tr><td><span class="sev md">Med</span></td><td>Reviews stalled</td><td>No Trustpilot review since 12 Aug 2026; 3 of 10 replied to; 0 Google reviews.</td><td>Ask every client after a kept appointment or policy delivery; never ask only happy clients. Reply to every review. Shift asks to Google once a profile exists.</td><td>Consented client list</td><td>Days 31–180</td></tr>
+    <tr><td><span class="sev md">Med</span></td><td>Compliance-sensitive copy</td><td>"Guaranteed lifetime income" (site), "nationally recognized leader" (Facebook), "fiduciary-first" (Instagram), "best…" URLs, and no consent text at the point of form capture.</td><td>Give you a marked-up list to review with your IMO or compliance contact. Replace or substantiate each claim. Add consent language to every form.</td><td>Compliance contact; carrier approvals</td><td>Days 0–30, ongoing</td></tr>
+    <tr><td><span class="sev lo">Low</span></td><td>AI visibility unmeasured</td><td>Live assistants not yet tested. Google AI Overviews appeared on all 7 searches captured.</td><td>Run the same 8 questions monthly in ChatGPT, Perplexity, Gemini, Copilot and Google, and log answers with dates.</td><td>None</td><td>Day 0, then monthly</td></tr>
+  </table>
+  <footer>Sources for each row are in the Evidence Appendix (§1 site crawl, §2 licensing and funnel, §3 and §11 reviews and Maps, §9 compliance). Most Week 1–2 items are configuration and copy changes that need admin access, which you keep throughout. Not legal advice; your carrier, IMO or counsel has the final say on compliance wording.</footer>
+</section>
+
+<!-- ===================== PAGE 4 ===================== -->
+<section class="page">
+  <header class="bar">
+    <div class="brand">IJADI · GROWTH BRIEF</div>
+    <div class="meta">Advocate Life Group · page 4 of 4</div>
+  </header>
+  <h1><span class="num">4</span>The roadmap we'd offer, and what it could be worth</h1>
+
+  <table class="road">
+    <tr><th style="width:9%">Phase</th><th style="width:34%">What we do</th><th style="width:20%">What you give us</th><th style="width:19%">How we measure</th><th>Decision checkpoint</th></tr>
+    <tr><td>Days 0–30<br>Foundation</td><td>Settle home base and roster. Run the speed-to-lead pilot (below). Fix the contact path, placeholder content, analytics and consent text. Add structured data. Hand you the compliance mark-up. Record baselines, including the AI panel.</td><td>Two 45-min calls; admin access; roster with NPNs; current lead counts; compliance contact.</td><td>Leads by source, median first response, contact / appointment / show rates, AI panel answers.</td><td>Keep or stop the pilot. Agree on Google profile eligibility.</td></tr>
+    <tr><td>Days 31–90<br>Build</td><td>Publish 6–8 question-led pages (FERS, veterans, IUL review, annuity vs CD, how much life insurance). Add bylines and short answers to top posts. Split forms by product. Set up a Google profile and directory listings if eligible. Start review requests.</td><td>30 min a week for content sign-off; consented client list.</td><td>Pages indexed; impressions on priority questions (Search Console); new reviews a month; share of leads qualified.</td><td>Change course on any topic with flat impressions at day 90.</td></tr>
+    <tr><td>Days 91–180<br>Compound</td><td>Expand the topics that work. Add referral asks at policy delivery and annual review. Automate annual-review reminders. Re-run the AI panel. Test local search only if eligible.</td><td>A 30-min monthly review.</td><td>Policies by source (you enter them), referrals, AI mentions, cost per kept appointment.</td><td>Renew month to month, or leave with everything.</td></tr>
+  </table>
+
+  <h2>What it could be worth (ranges, not promises)</h2>
+  <table class="opp">
+    <tr><th style="width:42%">Extra first-year commission per year (policies)</th><th>Low</th><th>Base</th><th>High</th></tr>
+    <tr><td><b>Being found</b>: organic search only, run-rate by month 12</td><td>~$600 (0–1)</td><td>~$7,000 (2)</td><td>~$48,000 (9–10)</td></tr>
+    <tr><td><b>Handling leads well</b>: same leads, faster and fuller follow-up</td><td>~$8,000 (+3)</td><td>~$35,000 (+10)</td><td>~$91,000 (+18)</td></tr>
+  </table>
+  <p class="small"><b>All estimates; your real numbers replace ours in week 1.</b> <i>Found:</i> ~3,080 Ohio searches a month across priority questions (DataForSEO); click share 1 / 2.5 / 5%; visit-to-inquiry 1 / 2 / 3%; qualified 50–70%; appointment kept 50–70%; close 25–35%; $2,500 / $3,500 / $5,000 first-year commission per case. <i>Handled:</i> 20 / 40 / 60 leads a month; contact rate 40% rising to 50 / 55 / 60%; show rate 60% rising to 70 / 75 / 75%; close 30%. Renewals (IUL roughly 2–5% a year), annuity trails, cross-sell and referrals are left out. Benchmark: firms that replied within an hour were about 7× likelier to qualify a lead (HBR 2011, cross-industry, not insurance-specific).</p>
+
+  <div class="first">
+    <h2>What we would do first: a speed-to-lead pilot on the leads you already have (2–4 weeks)</h2>
+    <ul>
+      <li><b>Week 1:</b> Put the funnel's text consent in your business name and register it for business texting. Open at least 10 bookable slots a week. Add 24-hour and 2-hour reminders. Point "Contact Us" to a working form.</li>
+      <li><b>Weeks 1–4:</b> Every new lead gets a compliant text and email within 60 seconds. Missed calls get an automatic text-back. Leads who don't book get a 6-touch, 10-day follow-up. You see every lead in one inbox.</li>
+      <li><b>Success measure:</b> ≥90% of leads contacted within 5 minutes during business hours; contact rate up ≥10 points on your week-1 baseline; show rate ≥70%.</li>
+      <li><b>Easy exit:</b> It runs in your own GoHighLevel account and phone number. If the numbers haven't moved by week 4, we switch it off and you keep the setup. <span class="pill">Why first:</span> it pays back in weeks, needs no new ad spend, and closes a compliance gap.</li>
+    </ul>
+  </div>
+
+  <div class="two" style="margin-top:6px">
+    <div class="card"><h3>What we will not promise</h3><ul>
+      <li>Rankings, "#1", or a set number of leads, appointments or policies.</li>
+      <li>That AI assistants will name you. We can make you easier to cite; we can't guarantee it.</li>
+      <li>Fake reviews, reviews requested only from happy clients, bought contact lists, or claims your license and carriers don't support.</li>
+    </ul></div>
+    <div class="card"><h3>What you'll see from us every month</h3><ul>
+      <li>One page: leads by source, median response time, contact / appointment / show rates, policies (you enter them), search and map views, and the same AI questions re-run with dates.</li>
+      <li>What we did, what's next, and a clear stop/go call, month to month.</li>
+      <li>We know two earlier vendors didn't deliver. <b>You own every account, login, page and phone number</b>, and you can leave with all of it.</li>
+    </ul></div>
+  </div>
+
+  <footer>Compliance (not legal advice): Ohio Adm. Code 3901-6-01 requires life-insurance marketing to say clearly that it is life insurance. TCPA prior express written consent still applies to automated texts and calls. Health and financial details from intake belong in a secured CRM. Some carriers require approval of marketing. Research gaps: live AI answers, Ohio SOS entity record, backlinks, page-speed scores and full review histories were not captured. Details in the Evidence Appendix.</footer>
+</section>
+
+</body>
+</html>
